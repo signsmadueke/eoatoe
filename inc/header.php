@@ -97,9 +97,15 @@
             <!-- <li class="<?php if ($title == "Podcasts"){echo "active";} ?>">
                 <a href="podcasts">Podcasts</a>
             </li> -->
-            <!-- <li class="<?php if ($title == "Devotionals"){echo "active";} ?>">
-                <a href="devotionals">Devotionals</a>
-            </li> -->
+            <li class="<?php if ($title == "Meditations"){echo "active";} ?>">
+                <a href="meditations">Meditations</a>
+            </li>
+            <li class="<?php if ($title == "Prayers"){echo "active";} ?>">
+                <a href="prayers">Prayers</a>
+            </li>
+            <li class="<?php if ($title == "Counselling"){echo "active";} ?>">
+                <a href="counselling">Counselling</a>
+            </li>
             <li class="<?php if ($title == "Contact"){echo "active";} ?>">
                 <a href="contact">Contact</a>
             </li>
@@ -155,9 +161,15 @@
             <!-- <li class="<?php if ($title == "Podcasts"){echo "active";} ?>">
                 <a href="podcasts">Podcasts</a>
             </li> -->
-            <!-- <li class="<?php if ($title == "Devotionals"){echo "active";} ?>">
-                <a href="devotionals">Devotionals</a>
-            </li> -->
+            <li class="<?php if ($title == "Meditations"){echo "active";} ?>">
+                <a href="meditations">Meditations</a>
+            </li>
+            <li class="<?php if ($title == "Prayers"){echo "active";} ?>">
+                <a href="prayers">Prayers</a>
+            </li>
+            <li class="<?php if ($title == "Counselling"){echo "active";} ?>">
+                <a href="counselling">Counselling</a>
+            </li>
             <li class="<?php if ($title == "Contact"){echo "active";} ?>">
                 <a href="contact">Contact</a>
             </li>
