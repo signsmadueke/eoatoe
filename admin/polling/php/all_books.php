@@ -25,7 +25,7 @@ if ($result) {
 
                                         <div class="col-md-6 col-lg-4">
                                             <figure class="effect-winston">
-                                                <img src="book_images/<?= $book_image; ?>" width="100%" alt="img06">
+                                                <img src="../assets/images/books/<?= $book_image; ?>" width="100%" alt="img06">
                                                 <figcaption>
                                                     <p>
 

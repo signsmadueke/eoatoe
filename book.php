@@ -41,9 +41,9 @@ $extraBodyClasses = '';
 require_once 'inc/header.php';
 ?>
 
-<a href="books" class="btn btn-chevron">
+<a href="books" class="btn btn-back">
     <img class="svg" src="assets/images/icons/chevron-left.svg">
-    <span>All Books</span>
+    <span>Back to Books</span>
 </a>
 
 <section id="book-details">
@@ -61,9 +61,9 @@ require_once 'inc/header.php';
                 <div class="shadow">
                     <img src="assets/images/books/<?= $book_image; ?>">
                 </div>
-                <a href="https://read.amazon.com/kp/embed?asin=<?= $book_kindle_asin; ?>" target="_blank" class="w-icon button outline">
-                    <img class="svg" src="assets/images/icons/eye.svg">
+                <a href="https://read.amazon.com/kp/embed?asin=<?= $book_kindle_asin; ?>" target="_blank" class="button">
                     <span>Preview Book</span>
+                    <img class="svg" src="assets/images/icons/arrow-top-right.svg">
                 </a>
             </div>
             <!-- <img class="book-image animate reveal" src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>"> -->
@@ -134,11 +134,11 @@ require_once 'inc/header.php';
                     <span>Previous Book</span>
                 </div>
                 <div class="prev-book-details">
-                    <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of <?= $book_title; ?>">
                     <div class="name">
                         <h3><?= $book_title; ?></h3>
                         <div><?= $book_description; ?></div>
                     </div>
+                    <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of <?= $book_title; ?>">
                 </div>
             </a>
         <?php } } ?>
@@ -158,11 +158,11 @@ require_once 'inc/header.php';
                 </div>
 
                 <div class="next-book-details">
+                    <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of <?= $book_title; ?>">
                     <div class="name">
                         <h3><?= $book_title; ?></h3>
                         <div><?= $book_description; ?></div>
                     </div>
-                    <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of <?= $book_title; ?>">
                 </div>
             </a>
         <?php } } ?>

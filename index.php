@@ -1,15 +1,9 @@
 <?php
     require_once "admin/includes/functions/config.php";
-    $result = fetchAllDesc("books", "book_id", 0, 2);
+    $result = fetchAllDesc("books", "book_id", 0, 4);
     if ($result) {
         $books = $result;
     }
-
-    $result2 = fetchAllDesc("freebooks", "book_id", 0, 1);
-    if ($result2) {
-        $freebooks = $result2;
-    }
-
 
     $title = 'Prayer M. Madueke';
     $tagline = "Christian Author & Speaker";
@@ -25,22 +19,27 @@
 <section id="bestsellers">
 	
     <div class="title">
-        <h2>Best Selling Books</h2>
+        <h3>Books</h3>
         
         <a href="https://store.madueke.com" class="btn btn-chevron btn-link">
-            <span>Visit bookstore</span>
+            <span>See all Books</span>
             <img class="svg" src="assets/images/icons/arrow-top-right.svg">
         </a>
     </div>
 	
 	<div id="books">
-        <a alt="21/40 Nights of Decrees and Your Enemies Will Surrender" href="https://store.madueke.com/books/21-40-nights-of-decrees-and-your-enemies-will-surrender" class="book animated reveal" style="background-image: url(assets/images/books/home/1.png)">
-            <div class="line"></div>
-        </a>
-
-        <a alt="35-special-dangerous-decrees" href="https://store.madueke.com/books/35-special-dangerous-decrees" class="book animated reveal" style="background-image: url(assets/images/books/home/2.png)">
-            <div class="line"></div>
-        </a>
+        <?php
+            if (!empty($books)) {
+                foreach ($books as $book) {
+                    extract($book);
+                    $book_titledisplay = str_replace("</b>", "'", $book_title);
+                    $book_link = strtolower(str_replace("'", "</b>", $book_title));
+                    $book_link = strtolower(str_replace(" ", "-", $book_title));
+                    ?>
+                    <a alt="<?= $book_titledisplay; ?>" href="book?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
+                        <div class="line"></div>
+                    </a>
+                <?php } } ?>
     </div>
 </section>
 

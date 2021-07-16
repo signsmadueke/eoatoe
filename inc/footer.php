@@ -1,5 +1,5 @@
 <footer id="footer">
-    <p class="copyright">&copy; 2020 Emmanuel Atoe. All rights reserved.</p>
+    <p class="copyright">&copy; 2021 Emmanuel Atoe. All rights reserved.</p>
 </footer>
     
     <!-- Global site tag (gtag.js) - Google Analytics -->

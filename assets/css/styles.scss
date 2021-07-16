@@ -720,6 +720,42 @@ span {
 	// }
 }
 
+.btn-back {
+	padding: 15px 20px;
+    width: max-content;
+    border: 1px solid rgba(10, 26, 78, 0.1);
+    border-radius: 5px;
+	display: grid;
+	grid-template-columns: max-content max-content;
+	grid-gap: 10px;
+	align-items: center;
+
+	span {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 21px;
+		color: #222222;
+		// opacity: 0.7;
+	}
+	
+	svg {		
+		path {
+			fill: #222222;
+			// opacity: 0.7;
+		}
+	}
+	
+	svg,
+	img {
+		height: 11px;
+	}
+	
+	&:hover {
+		background: rgba(10, 26, 78, 0.05);
+		border: 1px solid rgba(10, 26, 78, 0.2);
+	}
+}
+
 input:not([type=checkbox]):not([type=radio]),
 textarea {
 	padding: 15px 25px !important;
@@ -817,7 +853,8 @@ button.button {
 
 	&.outline {
 		background: transparent !important;
-		border: 1px solid rgba(68, 68, 68, 0.2) !important;
+		border: 1px solid rgba(10, 26, 78, 0.1) !important;
+				
 
 		span {
 			color: #222222 !important;
@@ -835,16 +872,8 @@ button.button {
 		}
 
 		&:hover {
-			background: #222222 !important;
-			border: 1px solid rgba(68, 68, 68, 1) !important;
-
-			span {
-				color: #ffffff !important;
-			}
-
-			svg path {
-				fill: #ffffff !important;
-			}
+			background: rgba(10, 26, 78, 0.05) !important;
+			border: 1px solid rgba(10, 26, 78, 0.2) !important;
 		}
 	}
 
@@ -880,7 +909,7 @@ body.modal-opened {
 body.dark {
 	color: white !important;
 	fill: white !important;
-	background-image: url(../images/eatoe/eatoe-lg.jpg);
+	background-image: linear-gradient(0deg, rgba(4, 12, 37, 0.5), rgba(4, 12, 37, 0.5)), linear-gradient(0deg, #061133 0%, rgba(4, 12, 37, 0.5) 57.09%, rgba(4, 12, 37, 0.5) 87.26%, rgba(4, 12, 37, 0.8) 99.16%), url(../images/eatoe/eatoe-lg.jpg);
 	opacity: 1;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -989,6 +1018,14 @@ body.dark {
 		}
 	}
 
+	.logo-name {
+		color: #ffffff !important;
+	}
+
+	.logo-tagline {
+		color: #FFD2BA !important;
+	}
+
 	.logo-icon {
 		display: none;
 	}
@@ -1047,7 +1084,7 @@ body.container {
 			font-size: 30px;
 			line-height: 30px;
 			display: block;
-			letter-spacing: -1px;
+			letter-spacing: -0.5px;
 		}
 
 		li {
@@ -1109,15 +1146,9 @@ body.sidebar-opened {
 		transform: none;
 
 		#logo {
-			.logo-icon {
-				animation: slideInRight 300ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
-				animation-delay: 200ms;
-				opacity: 0;
-			}
-
 			.logo-text {
-				animation: slideInRight 400ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
-				animation-delay: 100ms;
+				animation: slideInRight 1s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+				animation-delay: 0;
 				opacity: 0;
 			}
 		}
@@ -1132,23 +1163,27 @@ body.sidebar-opened {
 				}
 
 				&:nth-child(2) {
-					animation-delay: .6s;
+					animation-delay: .55s;
 				}
 
 				&:nth-child(3) {
-					animation-delay: .7s;
+					animation-delay: .6s;
 				}
 
 				&:nth-child(4) {
-					animation-delay: .8s;
+					animation-delay: .65s;
 				}
 
 				&:nth-child(5) {
-					animation-delay: .9s;
+					animation-delay: .7s;
 				}
 
 				&:nth-child(6) {
-					animation-delay: 1s;
+					animation-delay: .75s;
+				}
+
+				&:nth-child(7) {
+					animation-delay: .8s;
 				}
 			}
 		}
@@ -1160,19 +1195,19 @@ body.sidebar-opened {
 			opacity: 0;
 
 			&:nth-child(1) {
-				animation-delay: .9s;
+				animation-delay: .85s;
 			}
 
 			&:nth-child(2) {
-				animation-delay: 1s;
+				animation-delay: .9s;
 			}
 
 			&:nth-child(3) {
-				animation-delay: 1.1s;
+				animation-delay: .95s;
 			}
 
 			&:nth-child(4) {
-				animation-delay: 1.2s;
+				animation-delay: 1s;
 			}
 		}
 	}
@@ -1180,7 +1215,7 @@ body.sidebar-opened {
 	.copyright {
 		animation: slideIn .5s ease forwards;
 		opacity: 0;
-		animation-delay: 1.3s;
+		animation-delay: .9s;
 	}
 }
 
@@ -1290,7 +1325,7 @@ body.sidebar-opened {
 	.logo-text {
 		display: grid;
 		grid-template-rows: auto auto;
-		grid-gap: 5px;
+		grid-gap: 0px;
 		padding: 6px 0;
 	}
 
@@ -1309,20 +1344,22 @@ body.sidebar-opened {
 
 .logo-name {
 	font-family: 'Atoe Domaine';
-	font-size: 30px;
-	line-height: 30px;
-	font-weight: 700;
+	font-size: 40px;
+	line-height: 1em;
+	font-weight: 600;
 	white-space: nowrap;
-	letter-spacing: -0.5px;
+	letter-spacing: -0.03em;
+	color: #0A1A4E;
 }
 
 .logo-tagline {
-	font-size: 13px;
+	font-size: 10px;
 	font-weight: 700;
-	line-height: 13px;
-	letter-spacing: 0.3em;
+	line-height: 1.3em;
+	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	white-space: nowrap;
+	color: #9E4E22;
 }
 
 .menu {
@@ -1376,6 +1413,7 @@ body.sidebar-opened {
 	display: grid;
 	grid-template-columns: 1fr;
 	align-items: center;
+	place-self: center;≈
 
 	#social {
 		justify-self: end;
@@ -1451,11 +1489,11 @@ body.sidebar-opened {
 
 #space {
 	width: 100%;
-	height: 100px;
+	height: 0px;
 	background: transparent;
 
 	@media (max-width: 800px) {
-		height: 100px;
+		height: 0px;
 	}
 }
 
@@ -1463,7 +1501,7 @@ body.sidebar-opened {
 	display: grid;
 	grid-template-rows: auto auto;
 	grid-gap: 30px;
-	max-width: 60%;
+	max-width: 100%;
 
 	@media (max-width: 800px) {
 		max-width: none;
@@ -1472,7 +1510,7 @@ body.sidebar-opened {
 
 	.title {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr auto;
 		align-items: center;
 		grid-gap: 10px;
 
@@ -1483,10 +1521,10 @@ body.sidebar-opened {
 			grid-auto-rows: max-content;
 		}
 
-		h2 {
+		h3 {
 			justify-self: start;
-			font-size: 35px;
-			line-height: 45px;
+			font-size: 50px;
+			line-height: 1.3em;
 
 			// @media (max-width: 800px) {
 			// 	font-size: 25px;
@@ -1503,15 +1541,15 @@ body.sidebar-opened {
 		}
 
 		.btn-link {
-			padding: 10px 0px !important;
-			grid-gap: 10px !important;
+			padding: 5px 0px !important;
+			grid-gap: 7px !important;
 			border: none !important;
-			border-bottom: 1px dashed rgba(255, 255, 255, 0.3) !important;
+			border-bottom: 1px dashed rgba(255, 209, 184, 0.7) !important;
 			background-color: transparent !important;
 			width: max-content !important;
 
 			&:hover {
-				border-bottom: 1px dashed rgba(255, 255, 255, 1) !important;
+				border-bottom: 1px dashed rgb(255, 209, 184) !important;
 			}
 
 			span {
@@ -1522,7 +1560,7 @@ body.sidebar-opened {
 
 	#books {
 		display: grid;
-		grid-template-columns: repeat(2, minmax(150px, 100%));
+		grid-template-columns: repeat(4, minmax(150px, 100%));
 		grid-gap: 30px;
 		align-items: top;
 
@@ -1554,7 +1592,9 @@ body.sidebar-opened {
 			}
 
 			&:hover {
-				box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.9), inset 8px 0px 1.82079px rgba(255, 255, 255, 0.12), inset 3px -3px 4.55197px rgba(0, 0, 0, 0.5), inset -3px 3px 1.82079px rgba(255, 255, 255, 0.15) !important;
+				// box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.9), inset 8px 0px 1.82079px rgba(255, 255, 255, 0.12), inset 3px -3px 4.55197px rgba(0, 0, 0, 0.5), inset -3px 3px 1.82079px rgba(255, 255, 255, 0.15) !important;
+				// transform: translate(0px, -10px) !important;
+				filter: brightness(0.7);
 			}
 		}
 	}
@@ -2159,12 +2199,49 @@ body.sidebar-opened {
 
 	.book-image {
 		width: 100%;
-		height: auto;
+		height: max-content;
 		position: relative;
 
 		.button {
-			width: 100% !important;
-			text-align: center;		
+			display: grid !important;
+			grid-auto-flow: column !important;
+			grid-template-columns: max-content max-content !important;
+			justify-content: center;
+			grid-gap: 15px !important;
+			width: max-content !important;
+			align-items: center !important;
+			width: 100% !important;	
+			background: transparent !important;
+			border: 1px solid rgba(10, 26, 78, 0.1) !important;
+			
+			span {
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 21px;
+				color: #222222 !important;
+				// opacity: 0.7;
+			}
+
+			svg path {
+				fill: #222222 !important;
+			}
+
+			&:hover {
+				background: rgba(10, 26, 78, 0.05) !important;
+				border: 1px solid rgba(10, 26, 78, 0.2) !important;
+			}
+			
+			svg {		
+				path {
+					fill: #222222;
+					// opacity: 0.7;
+				}
+			}
+			
+			svg,
+			img {
+				height: 11px !important;
+			}	
 		}
 
 		.image {
@@ -2230,7 +2307,8 @@ body.sidebar-opened {
 
 		.title {
 			font-family: 'Gilroy';
-			font-weight: 500;
+			font-weight: 600;
+    		letter-spacing: 0;
 			font-size: 16px;
 			line-height: 35px;
 			border-bottom: 1px solid rgba(68, 68, 68, 0.1);
@@ -2238,21 +2316,27 @@ body.sidebar-opened {
 		}
 
 		.book-title {
-			padding-bottom: 20px;
-			border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+			padding-bottom: 10px;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			
+			h1 {
+				font-weight: 600;
+				font-size: 50px;
+				line-height: 1em;
+			}
 		}
 
 		.description {
 			display: grid;
 			grid-gap: 20px;
 			grid-auto-rows: max-content;
-			padding-bottom: 30px;
+			// padding-bottom: 30px;
 			
 			.text {
 				font-weight: 500;
 				font-size: 16px;
 				line-height: 30px;
-				max-height: 245px;
+				max-height: 180px;
 				overflow: hidden;
 			}
 
@@ -2442,22 +2526,18 @@ body.sidebar-opened {
 		display: grid;
 		grid-auto-flow: row;
 		grid-gap: 20px;
-		justify-items: start;
-		padding: 20px;
+		justify-items: end;
+		padding: 30px;
 		border: 1px solid rgba(68, 68, 68, 0.1);
 		border-radius: 10px !important;
-		text-align: left;
+		text-align: right;
 
 		&:hover {
-			background-color: rgba(68, 68, 68, 0.05);
-			box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.05);
+			background: rgba(10, 26, 78, 0.05) !important;
+			border: 1px solid rgba(10, 26, 78, 0.2) !important;
 
 			img {
 				box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.2);
-			}
-
-			.btn-chevron {
-				grid-gap: 15px;
 			}
 		}
 
@@ -2486,7 +2566,7 @@ body.sidebar-opened {
 			grid-auto-flow: column;
 			grid-template-columns: max-content 1fr;
 			align-items: center;
-			grid-gap: 30px;
+			grid-gap: 20px;
 
 			@media (max-width: 800px) {
 				grid-template-columns: none;
@@ -2537,22 +2617,18 @@ body.sidebar-opened {
 		display: grid;
 		grid-auto-flow: row;
 		grid-gap: 20px;
-		justify-items: end;
-		padding: 20px;
+		justify-items: start;
+		padding: 30px;
 		border: 1px solid rgba(68, 68, 68, 0.1);
 		border-radius: 10px !important;
-		text-align: right;
+		text-align: left;
 		
 		&:hover {
-			background-color: rgba(68, 68, 68, 0.05);
-			box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.05);
+			background: rgba(10, 26, 78, 0.05) !important;
+			border: 1px solid rgba(10, 26, 78, 0.2) !important;
 
 			img {
 				box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.2);
-			}
-
-			.btn-chevron {
-				grid-gap: 15px;
 			}
 		}
 
@@ -2570,6 +2646,7 @@ body.sidebar-opened {
 			}
 
 			span {
+
 				@media (max-width: 800px) {
 					display: none;
 				}
@@ -2581,7 +2658,7 @@ body.sidebar-opened {
 			grid-auto-flow: column;
 			grid-template-columns: max-content 1fr ;
 			align-items: center;
-			grid-gap: 30px;
+			grid-gap: 20px;
 
 			@media (max-width: 800px) {
 				grid-template-columns: none;
@@ -5176,15 +5253,14 @@ body.container.donate {
 		font-size: 30px;
 	}
 
-	.logo-tagline {
-		font-size: 11px !important;
-		line-height: 11px !important;
-		letter-spacing: 0.2em !important;
+	.logo-name {
+		font-size: 30px !important;
+    	line-height: 1em !important;
 	}
 	
-	.logo-name {
-		font-size: 19px !important;
-		line-height: 19px !important;
+	.logo-tagline {
+		font-size: 8px !important;
+		line-height: 1.3em !important;
 	}
 	
 	#logo {
@@ -5234,7 +5310,7 @@ body.container.donate {
 	}
 
 	body.dark {
-		background-image: url('../images/eatoe/eatoe-lg.jpg') !important;
+		background-image: linear-gradient(0deg, rgba(4, 12, 37, 0.5), rgba(4, 12, 37, 0.5)), linear-gradient(0deg, #061133 0%, rgba(4, 12, 37, 0.5) 57.09%, rgba(4, 12, 37, 0.5) 87.26%, rgba(4, 12, 37, 0.8) 99.16%), url(../images/eatoe/eatoe-lg.jpg);
 		background-position: center top !important;
 	}
 
@@ -5262,8 +5338,8 @@ body.container.donate {
 }
 
 @media (max-width: 320px) {
-	.logo-text {
-		display: none !important;
-		grid-template-columns: repeat(auto-fit, minmax(calc(100%), calc(100%))) !important;
-	}
+	// .logo-text {
+	// 	display: none !important;
+	// 	grid-template-columns: repeat(auto-fit, minmax(calc(100%), calc(100%))) !important;
+	// }
 }

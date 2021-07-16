@@ -71,12 +71,9 @@
 <section id="navigation">
     <div id="logo">
         <a href="/">
-            <div class="logo-icon">
-                <img src="assets/images/madueke/icon.png" alt="Emmanuel Atoe">
-            </div>
             <div class="logo-text">
                 <h3 class="logo-name">Emmanuel Atoe</h3>
-                <p class="logo-tagline">CHRISTIAN AUTHOR</p>
+                <p class="logo-tagline">Christian Counsellor & Author</p>
             </div>
         </a>
     </div>
@@ -126,12 +123,9 @@
     <section id="navigation">
         <div id="logo">
             <a href="/">
-                <div class="logo-icon">
-                    <img src="assets/images/madueke/icon.png" alt="Emmanuel Atoe">
-                </div>
                 <div class="logo-text">
                     <h3 class="logo-name">Emmanuel Atoe</h3>
-                    <p class="logo-tagline">CHRISTIAN AUTHOR</p>
+                    <p class="logo-tagline">Christian Counsellor & Author</p>
                 </div>
             </a>
         </div>
@@ -179,7 +173,7 @@
         </ul>
     </nav>
     
-    <div id="social">
+    <!-- <div id="social">
         <ul>
             <li>
                 <a href="https://facebook.com/prayermadueke">
@@ -197,8 +191,9 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </div> -->
 
+    <div id="sidebar-space"></div>
     <div id="sidebar-space"></div>
 
     <p class="copyright">© 2020 Emmanuel Atoe. All rights reserved.</p>
