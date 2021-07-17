@@ -15,7 +15,7 @@ if (isset($_GET['book'])) {
     if ($response) {
         $otherbooks = $response;
     }
-
+ 
     $response2 = getOtherBooksDesc("books", "book_title", $book_link, "book_id", 1);
     if ($response2) {
         $otherbooksDesc = $response2;
