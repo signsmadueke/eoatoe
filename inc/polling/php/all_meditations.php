@@ -32,11 +32,11 @@ if (!empty($meditations)) {
                 <a href="meditation?meditation=<?= $meditation_link; ?>">
                     <h3><?= $meditation_title; ?></h3>
                 </a>
-                <div class="meditation-author">
+                <div class="devotional-author">
                     <img src="assets/images/madueke/icon.png" alt="Emmanuel Atoe">
                     <p><span>by </span><?= $meditation_author; ?></p>
                 </div>
-                <div class="meditation-date">
+                <div class="devotional-date">
                     <p><span>Posted on </span><?= date("D, d M Y", strtotime($datePosted)); ?></p>
                 </div>
                 <a href="meditation?meditation=<?= $meditation_link; ?>" class="description">
