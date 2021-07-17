@@ -43,11 +43,11 @@
 
                     <div class="details">
                         <a href="meditation?devotion=<?= $meditation_link; ?>">
-                            <h3><?= $mediation_title; ?></h3>
+                            <h3><?= $meditation_title; ?></h3>
                         </a>
                         <div class="meditation-author">
                             <img src="assets/images/madueke/icon.png" alt="Emmanuel Atoe">
-                            <p><span>by </span><?= $devotion_author; ?></p>
+                            <p><span>by </span><?= $meditation_author; ?></p>
                         </div>
                         <div class="meditation-date">
                             <p><span>Posted on </span><?= date("D, d M Y", strtotime($datePosted)); ?></p>
