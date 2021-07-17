@@ -3,7 +3,7 @@
 
     $result = fetchAllDesc("meditations", "meditation_id", 0, 6);
     if ($result) {
-        $mediations = $result;
+        $meditations = $result;
     }
 
 
@@ -24,8 +24,8 @@
         
     <div class="devotionals" id="devotionals">
         <?php
-        if (!empty($mediations)) {
-            foreach ($mediations as $meditation) {
+        if (!empty($meditations)) {
+            foreach ($meditations as $meditation) {
                 extract($meditation);
                 $meditation_title = str_replace("</b>", "'", $meditation_title);
                 $meditation_body = str_replace("</b>", "'", $meditation_body);
