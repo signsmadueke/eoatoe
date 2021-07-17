@@ -8,7 +8,7 @@
 
 
     $page_name = "Meditations";
-    $title = 'Devotionals — Emmanuel Atoe';
+    $title = 'Meditations — Emmanuel Atoe';
     $tagline = "Christian Author & Speaker";
     $page_description = 'Devotionals, Prayers & Prophetic Declarations by Emmanuel Atoe, Christian Author & Speaker.';
     $page_image = "eoatoe/eoatoe.jpg";
@@ -20,7 +20,7 @@
     
 <section id="all-devotionals">
 
-    <h1 class="section-title animated reveal">Devotionals</h1>
+    <h1 class="section-title animated reveal">Meditations</h1>
         
     <div class="devotionals" id="devotionals">
         <?php

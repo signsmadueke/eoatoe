@@ -8,9 +8,9 @@
 
 
     $page_name = "Prayers";
-    $title = 'Devotionals — Emmanuel Atoe';
+    $title = 'Prayers — Emmanuel Atoe';
     $tagline = "Christian Author & Speaker";
-    $page_description = 'Devotionals, Prayers & Prophetic Declarations by Emmanuel Atoe, Christian Author & Speaker.';
+    $page_description = 'Prayers, Prayers & Prophetic Declarations by Emmanuel Atoe, Christian Author & Speaker.';
     $page_image = "eoatoe/eoatoe.jpg";
     $extraBodyClasses = '';
     require_once 'inc/header.php';
@@ -20,7 +20,7 @@
     
 <section id="all-devotionals">
 
-    <h1 class="section-title animated reveal">Devotionals</h1>
+    <h1 class="section-title animated reveal">Prayers</h1>
         
     <div class="devotionals" id="devotionals">
         <?php
