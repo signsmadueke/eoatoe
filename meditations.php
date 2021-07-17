@@ -20,7 +20,7 @@
     
 <section id="all-devotionals">
 
-    <h1 class="section-title animated reveal">Devotionals</h1>
+    <h1 class="section-title animated reveal">Meditations</h1>
         
     <div class="devotionals" id="devotionals">
         <?php
