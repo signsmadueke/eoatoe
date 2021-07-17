@@ -1,80 +1,80 @@
 <?php
     require_once "admin/includes/functions/config.php";
 
-    if (isset($_GET['devotion'])) {
-        $devotionTitle = $_GET['devotion'];
-        $devotion_link = ucwords(str_replace("-", " ", $devotionTitle));
+    if (isset($_GET['counsel'])) {
+        $counselTitle = $_GET['counsel'];
+        $counsel_link = ucwords(str_replace("-", " ", $counselTitle));
 
-        $result = whereQuote("devotions", "devotion_title", "$devotion_link");
+        $result = whereQuote("counselling", "counsel_title", "$counsel_link");
         if ($result) {
-            $devotions = $result;
+            $counselling = $result;
         } else {
             echo "false";
             var_dump($result);
         }
 
-        $response = getOtherBooksAsc("devotions", "devotion_title", $devotion_link, "devotion_id", 1);
+        $response = getOtherBooksAsc("counselling", "counsel_title", $counsel_link, "counsel_id", 1);
         if ($response) {
-            $otherdevotions = $response;
+            $othercounselling = $response;
         }
 
-        $response2 = getOtherBooksDesc("devotions", "devotion_title", $devotion_link, "devotion_id", 1);
+        $response2 = getOtherBooksDesc("counselling", "counsel_title", $counsel_link, "counsel_id", 1);
         if ($response2) {
-            $otherdevotionsDesc = $response2;
+            $othercounsellingDesc = $response2;
         }
     } else {
-        redirect_to("devotionals");
+        redirect_to("counselling");
     }
 
-    foreach ($devotions as $description_text) {
-        $page_description = str_replace("</b>", "'", $description_text['devotion_body']);
+    foreach ($counselling as $description_text) {
+        $page_description = str_replace("</b>", "'", $description_text['counsel_body']);
         $page_description = trim(preg_replace('/\s+/', ' ', $page_description));
         $page_description = strip_tags($page_description);
         $page_description = substr($page_description, 0, 1000) . "...";
     }
 
-    foreach ($devotions as $image) {
-        $page_image = "devotionals/" . $image['devotion_image'];
+    foreach ($counselling as $image) {
+        $page_image = "devotionals/" . $image['counsel_image'];
     }
 
 
     $page_name = "Counselling";
-    $title = $devotion_link;
+    $title = $counsel_link;
     $tagline = "Emmanuel Atoe — Christian Author & Speaker";
     $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>
 
 <?php
-    if (!empty($devotions)) {
-        foreach ($devotions as $devotion) {
-            extract($devotion);
+    if (!empty($counselling)) {
+        foreach ($counselling as $counsel) {
+            extract($counsel);
 
-            $devotion_title = str_replace("</b>", "'", $devotion_title);
-            $devotion_subtitle = str_replace("</b>", "'", $devotion_subtitle);
-            $devotion_body = str_replace("</b>", "'", $devotion_body); ?>
+            $counsel_title = str_replace("</b>", "'", $counsel_title);
+            $counsel_subtitle = str_replace("</b>", "'", $counsel_subtitle);
+            $counsel_body = str_replace("</b>", "'", $counsel_body); ?>
 
                 <section id="devotional-header" class="desktop">
-                    <img src="assets/images/devotionals/<?= $devotion_subimage; ?>" alt="<?= $devotion_title; ?>">
-                    <img class="shadow" src="assets/images/devotionals/<?= $devotion_subimage; ?>">
+                    <img src="assets/images/devotionals/<?= $counsel_subimage; ?>" alt="<?= $counsel_title; ?>">
+                    <img class="shadow" src="assets/images/devotionals/<?= $counsel_subimage; ?>">
                 </section>
 
                 <section id="devotional-header" class="mobile">
-                    <img src="assets/images/devotionals/<?= $devotion_image; ?>" alt="<?= $devotion_title; ?>">
-                    <img class="shadow" src="assets/images/devotionals/<?= $devotion_image; ?>">
+                    <img src="assets/images/devotionals/<?= $counsel_image; ?>" alt="<?= $counsel_title; ?>">
+                    <img class="shadow" src="assets/images/devotionals/<?= $counsel_image; ?>">
                 </section>
 
                 <section id="devotional-details">
-                    <h1 class="devotional-name"><?= $devotion_title; ?></h1>
+                    <h1 class="devotional-name"><?= $counsel_title; ?></h1>
                     <div class="devotional-author">
                         <img src="assets/images/madueke/icon.png" alt="Emmanuel Atoe">
-                        <p><span>by </span><?= $devotion_author; ?></p>
+                        <p><span>by </span><?= $counsel_author; ?></p>
                     </div>
                     <p><span>Posted on </span><?= date("D, d M Y", strtotime($datePosted)); ?></p>
                 </section>
 
                 <section id="devotional-post">
-                    <?= $devotion_body; ?>
+                    <?= $counsel_body; ?>
                 </section>
 
                 <section id="book-promotion">
@@ -199,20 +199,20 @@
 <section id="other-devotionals">
 
     <?php
-        if (!empty($otherdevotionsDesc)) {
-            foreach ($otherdevotionsDesc as $otherdevotion) {
+        if (!empty($othercounsellingDesc)) {
+            foreach ($othercounsellingDesc as $otherdevotion) {
                 extract($otherdevotion);
-                $devotion_link = strtolower(str_replace(" ", "-", $devotion_title)); ?>
+                $counsel_link = strtolower(str_replace(" ", "-", $counsel_title)); ?>
 
-                    <a href="devotional?devotion=<?= $devotion_link; ?>" class="prev-devotional">
+                    <a href="devotional?devotion=<?= $counsel_link; ?>" class="prev-devotional">
                         <div class="btn btn-chevron">
                             <img class="svg" src="assets/images/icons/chevron-left.svg">
                             <span>Previous Devotionals</span>
                         </div>
                         <div class="prev-devotional-details">
-                            <img src="assets/images/devotionals/<?= $devotion_image?>" alt="">
+                            <img src="assets/images/devotionals/<?= $counsel_image?>" alt="">
                             <div class="name">
-                                <h3><?= $devotion_title; ?></h3>
+                                <h3><?= $counsel_title; ?></h3>
                                 <div class="date">
                                     <p><span>Posted on </span><?= $datePosted; ?></p>
                                 </div>
@@ -224,22 +224,22 @@
 
 
     <?php
-        if (!empty($otherdevotions)) {
-            foreach ($otherdevotions as $otherdevotionA) {
+        if (!empty($othercounselling)) {
+            foreach ($othercounselling as $otherdevotionA) {
                 extract($otherdevotionA);
-                $devotion_link = strtolower(str_replace(" ", "-", $devotion_title)); ?>
+                $counsel_link = strtolower(str_replace(" ", "-", $counsel_title)); ?>
 
-                    <a href="devotional?devotion=<?= $devotion_link; ?>" class="next-devotional">
+                    <a href="devotional?devotion=<?= $counsel_link; ?>" class="next-devotional">
                         <div class="btn btn-chevron">
                             <span>Next Devotionals</span>
                             <img class="svg" src="assets/images/icons/chevron-right.svg">
                         </div>
                         <div class="next-devotional-details">
                             <div class="name">
-                                <h3><?= $devotion_title; ?></h3>
+                                <h3><?= $counsel_title; ?></h3>
                                 <p><span>Posted on </span><?= $datePosted; ?></p>
                             </div>
-                            <img src="assets/images/devotionals/<?= $devotion_image?>" alt="">
+                            <img src="assets/images/devotionals/<?= $counsel_image?>" alt="">
                         </div>
                     </a>
     <?php } } ?>

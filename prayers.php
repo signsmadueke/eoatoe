@@ -56,7 +56,7 @@
                             <div><?= $htmltoplaintext; ?></div>
                         </a>
                         <a href="prayer?prayer=<?= $prayer_link; ?>" class="btn btn-spaced">
-                            <span>Read Devotional</span>
+                            <span>Read More</span>
                             <img class="svg" src="assets/images/icons/arrow-right.svg">
                         </a>
                     </div>
