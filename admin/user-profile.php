@@ -30,7 +30,7 @@
                     <div class="col-5 mr-auto">
                         <div class="align-self-start halfway-fab pl-3 pt-2">
                             <div class="text-left">
-                                <h3 class="card-title white">Prayer M. Madueke</h3>
+                                <h3 class="card-title white">Emmanuel Atoe</h3>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                             </a>
                         </div>
                         <div class="text-center">
-                            <span class="font-medium-2 text-uppercase">Prayer M. Madueke</span>
+                            <span class="font-medium-2 text-uppercase">Emmanuel Atoe</span>
                             <p class="grey font-small-2">Gospel Writer</p>
                         </div>
                         <div class="row">

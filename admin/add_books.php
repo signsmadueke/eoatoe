@@ -6,7 +6,6 @@
 
 
 <?php require_once "includes/templates/header.php"; ?>
-
 <body data-col="2-columns" class=" 2-columns ">
 <!-- ////////////////////////////////////////////////////////////////////////////-->
 <div class="wrapper">
@@ -25,7 +24,7 @@
                         <div class="card-title-wrap bar-success">
                             <h4 class="card-title" id="basic-layout-form">Add Book</h4>
                         </div>
-                        <p class="mb-0">Books added here are strictly Prayer Madueke's Books.</p>
+                        <p class="mb-0">Books added here are strictly Emmanuel Atoe's Books.</p>
                     </div>
                     <div class="card-body">
                         <div class="px-3">
@@ -44,7 +43,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="author">Book Author</label>
-                                                <input type="text" id="author" class="form-control" value="Prayer M. Madueke" name="bookAuthor">
+                                                <input type="text" id="author" class="form-control" value="Emmanuel Atoe" name="bookAuthor">
                                             </div>
                                         </div>
                                     </div>
@@ -95,7 +94,7 @@
 
                                     <div class="form-group">
                                         <label for="projectinput8">Book Description</label>
-                                        <textarea id="" rows="5" class="form-control" name="bookDescription"></textarea>
+                                        <textarea id="" rows="5" id="editor" class="form-control" name="bookDescription"></textarea>
                                     </div>
                                 </div>
 

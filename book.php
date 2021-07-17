@@ -35,8 +35,9 @@ if (isset($_GET['book'])) {
         $page_image = "books/" . $image['book_image'];
     }
 
+    $page_name = "Books";
     $title = $book_link;
-    $tagline = "Prayer M. Madueke — Christian Author & Speaker";
+    $tagline = "Emmanuel Atoe — Christian Author & Speaker";
 $extraBodyClasses = '';
 require_once 'inc/header.php';
 ?>
@@ -135,7 +136,7 @@ require_once 'inc/header.php';
                 </div>
                 <div class="prev-book-details">
                     <div class="name">
-                        <h3><?= $book_title; ?></h3>
+                        <h4><?= $book_title; ?></h4>
                         <div><?= $book_description; ?></div>
                     </div>
                     <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of <?= $book_title; ?>">
@@ -160,7 +161,7 @@ require_once 'inc/header.php';
                 <div class="next-book-details">
                     <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of <?= $book_title; ?>">
                     <div class="name">
-                        <h3><?= $book_title; ?></h3>
+                        <h4><?= $book_title; ?></h4>
                         <div><?= $book_description; ?></div>
                     </div>
                 </div>

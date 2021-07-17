@@ -7,10 +7,10 @@
     }
 
 
-    $title = 'Devotionals — Prayer M. Madueke';
+    $title = 'Devotionals — Emmanuel Atoe';
     $tagline = "Christian Author & Speaker";
-    $page_description = 'Devotionals, Prayers & Prophetic Declarations by Prayer M. Madueke, Christian Author & Speaker.';
-    $page_image = "madueke/prayermadueke.jpg";
+    $page_description = 'Devotionals, Prayers & Prophetic Declarations by Emmanuel Atoe, Christian Author & Speaker.';
+    $page_image = "eoatoe/eoatoe.jpg";
     $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>
@@ -45,7 +45,7 @@
                             <h3><?= $devotion_title; ?></h3>
                         </a>
                         <div class="devotional-author">
-                            <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
+                            <img src="assets/images/madueke/icon.png" alt="Emmanuel Atoe">
                             <p><span>by </span><?= $devotion_author; ?></p>
                         </div>
                         <div class="devotional-date">

@@ -38,8 +38,9 @@
     }
 
 
+    $page_name = "Meditations";
     $title = $devotion_link;
-    $tagline = "Prayer M. Madueke — Christian Author & Speaker";
+    $tagline = "Emmanuel Atoe — Christian Author & Speaker";
     $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>
@@ -66,7 +67,7 @@
                 <section id="devotional-details">
                     <h1 class="devotional-name"><?= $devotion_title; ?></h1>
                     <div class="devotional-author">
-                        <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
+                        <img src="assets/images/madueke/icon.png" alt="Emmanuel Atoe">
                         <p><span>by </span><?= $devotion_author; ?></p>
                     </div>
                     <p><span>Posted on </span><?= date("D, d M Y", strtotime($datePosted)); ?></p>
@@ -170,7 +171,7 @@
                             </div>
                             <div class="details">
                                 <h3>Prayers For Mercy</h3>
-                                <p>The journey to greatness can be very difficult outside the mercy of God. Do you know about God's mercy? Mercy can be translated as kindness, loving-kindness, good, goodness, pity, and compassion. It is a deep and tender feeling of compassion. God's mercy entails His having a deep and tender feeling of compassion towards us. It is being compassionate and aroused by the sight of weakness or suffering. It means to bend or stoop in kindness or loyalty to an inferior person, to favor or bestow something to him and to be considerate often when it is not expected or deserved. In this all-new message, Prayer Madueke teaches you practical keys on how:. The prayer of Mercy can change the situation. Mercy opens heaven on our prayer; mercy prevails over the judgment of the enemies. Mercy draws the attention of God to us. Mercy makes God forgive our sins and show us kindness. Mercy opens the door for miracles. The steadfast love of the LORD never ceases; his mercies never come to an end; they are new every morning; great is your faithfulness. The mercy of God is the anchor of deliverance for humanity. Get this book to know everything you need to know about God's Mercy!</p>
+                                <p>The journey to greatness can be very difficult outside the mercy of God. Do you know about God's mercy? Mercy can be translated as kindness, loving-kindness, good, goodness, pity, and compassion. It is a deep and tender feeling of compassion. God's mercy entails His having a deep and tender feeling of compassion towards us. It is being compassionate and aroused by the sight of weakness or suffering. It means to bend or stoop in kindness or loyalty to an inferior person, to favor or bestow something to him and to be considerate often when it is not expected or deserved. In this all-new message, Emmanuel Atoe teaches you practical keys on how:. The prayer of Mercy can change the situation. Mercy opens heaven on our prayer; mercy prevails over the judgment of the enemies. Mercy draws the attention of God to us. Mercy makes God forgive our sins and show us kindness. Mercy opens the door for miracles. The steadfast love of the LORD never ceases; his mercies never come to an end; they are new every morning; great is your faithfulness. The mercy of God is the anchor of deliverance for humanity. Get this book to know everything you need to know about God's Mercy!</p>
                                 <a href="book?book=prayers-for-mercy" class="btn btn-chevron">
                                     <span>Buy Now</span>
                                     <img class="svg" src="assets/images/icons/chevron-right.svg">

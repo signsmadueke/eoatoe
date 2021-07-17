@@ -4,8 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="Prayer Madueke">
-    <meta name="keywords" content="Prayer Madueke, Books">
+    <meta name="description" content="Emmanuel Atoe">
+    <meta name="keywords" content="Emmanuel Atoe, Books">
     <meta name="author" content="WorldBrainTechnology">
     <title>Prayer Admin</title>
     <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/madueke/icon.png">

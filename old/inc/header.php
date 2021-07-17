@@ -4,23 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="keywords" content="Prayer, Madueke, Prayer Madueke,  Christian Author, Christian, Author, Amazon, Religion, Spirituality.">
-    <meta name="description" content="Prayer Madueke, Christian Author of over 100 books on Amazon.">
+    <meta name="keywords" content="Prayer, Madueke, Emmanuel Atoe,  Christian Author, Christian, Author, Amazon, Religion, Spirituality.">
+    <meta name="description" content="Emmanuel Atoe, Christian Author of over 100 books on Amazon.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Prayer Madueke">
+    <meta property="og:title" content="Emmanuel Atoe">
     <meta property="og:type" content="website">
     <meta property="og:url" content="index.php">
     <meta property="og:image" content="assets/images/prayermadueke.jpg">
-    <meta property="og:description" content="Prayer Madueke, Christian Author of over 100 books on Amazon">
+    <meta property="og:description" content="Emmanuel Atoe, Christian Author of over 100 books on Amazon">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@prayermadueke">
     <meta name="twitter:creator" content="@prayermadueke">
-    <meta name="twitter:title" content="Prayer Madueke">
+    <meta name="twitter:title" content="Emmanuel Atoe">
     <meta name="twitter:image" content="assets/images/prayermadueke.jpg">
-    <meta name="twitter:description" content="Prayer Madueke, Christian Author of over 100 books on Amazon">
+    <meta name="twitter:description" content="Emmanuel Atoe, Christian Author of over 100 books on Amazon">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/fonts.css"/>
@@ -31,7 +31,7 @@
 
     <link rel="icon" href="favicon.png">
     <meta name="theme-color" content="#000000">
-    <title><?php echo $title; ?> — Prayer Madueke, Christian Author of over 100 books on Amazon</title>
+    <title><?php echo $title; ?> — Emmanuel Atoe, Christian Author of over 100 books on Amazon</title>
 </head>
 
 <body class="light-page">
@@ -42,7 +42,7 @@
                     <div class="col-auto">
                         <div id="Logo">
                             <a href="/">
-                                <img src="assets/images/logo.svg" height="60px" alt="Prayer Madueke">
+                                <img src="assets/images/logo.svg" height="60px" alt="Emmanuel Atoe">
                             </a>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                     <div class="col-auto" style="z-index: 0;">
                         <div id="Logo">
                             <a href="index.php">
-                                <img src="assets/images/favicon.svg" height="60px" alt="Prayer Madueke">
+                                <img src="assets/images/favicon.svg" height="60px" alt="Emmanuel Atoe">
                             </a>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                         <div class="col-auto mt-0 no-gutters pt-30">
                             <div id="Logo">
                                 <a href="index.php">
-                                    <img src="assets/images/logo.svg" height="50px" alt="Prayer Madueke">
+                                    <img src="assets/images/logo.svg" height="50px" alt="Emmanuel Atoe">
                                 </a>
                             </div>
                         </div>
@@ -121,7 +121,7 @@
                             <div class="container">
                                 <div class="row align-items-center">
                                     <div class="col-auto">
-                                        <p class="pt-30" style="color: white;font-family: 'CircularStd';">2019 Prayer Madueke. All rights reserved.</p>
+                                        <p class="pt-30" style="color: white;font-family: 'CircularStd';">2019 Emmanuel Atoe. All rights reserved.</p>
                                     </div>
                                 </div>
                             </div>

@@ -21,7 +21,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-auto">
-                        <p class="pt-30" style="color: white;font-family: 'CircularStd';">2019 Prayer Madueke. All rights reserved.</p>
+                        <p class="pt-30" style="color: white;font-family: 'CircularStd';">2019 Emmanuel Atoe. All rights reserved.</p>
                     </div>
                 </div>
             </div>

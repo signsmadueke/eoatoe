@@ -52,9 +52,9 @@ th.apm-tablemodule-keyhead {
 
 <?php
     $title = 'Editorial Reviews';
-    $tagline = "Prayer M. Madueke, Christian Author of over 100 books on Amazon";
-    $page_description = 'Get powerful books by Prayer M. Madueke for free.';
-    $page_image = "madueke/prayermadueke.jpg";
+    $tagline = "Emmanuel Atoe, Christian Author of over 100 books on Amazon";
+    $page_description = 'Get powerful books by Emmanuel Atoe for free.';
+    $page_image = "eoatoe/eoatoe.jpg";
     $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>

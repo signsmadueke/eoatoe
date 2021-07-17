@@ -2,7 +2,7 @@
     $title = 'Free Gift';
     $tagline = "Christian Author & Speaker";
     $page_description = 'A leading christian author, speaker, and expert on spiritual warfare and deliverance. His 100+ books cover every area of successful christian living.';
-    $page_image = "madueke/prayermadueke.jpg";
+    $page_image = "eoatoe/eoatoe.jpg";
     $extraBodyClasses = '';
 ?>
 
@@ -10,33 +10,33 @@
 <html lang="en">
 
 <head>
-    <title><?php echo $title; ?> — Prayer M. Madueke, <?php echo $tagline; ?></title>
+    <title><?php echo $title; ?> — Emmanuel Atoe, <?php echo $tagline; ?></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="author" content="Prayer M. Madueke">
+    <meta name="author" content="Emmanuel Atoe">
     <meta name="description" content="<?= $page_description; ?>">
-    <meta name="keywords" content="Prayer, Madueke, Prayer M. Madueke, Prayer Madueke, Christian Author, Christian, Author, Amazon, Religion, Spirituality, christianbook, devotion, faith, olukoya, prayer, prayer madueke, prayer rain, blessing prayer, prayer book, spiritual exercises.">
+    <meta name="keywords" content="Prayer, Madueke, Emmanuel Atoe, Emmanuel Atoe, Christian Author, Christian, Author, Amazon, Religion, Spirituality, christianbook, devotion, faith, olukoya, prayer, Emmanuel Atoe, prayer rain, blessing prayer, prayer book, spiritual exercises.">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
 
     <!-- Open Graph -->
-    <meta property="og:title" content="<?php echo $title; ?> — Prayer M. Madueke, <?php echo $tagline; ?>">
+    <meta property="og:title" content="<?php echo $title; ?> — Emmanuel Atoe, <?php echo $tagline; ?>">
     <meta property="og:description" content="<?php echo $page_description; ?>">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta property="article:publisher" content="https://www.facebook.com/prayermadueke/">
-    <meta property="og:site_name" content="Prayer M. Madueke">
+    <meta property="og:site_name" content="Emmanuel Atoe">
     <meta property="og:image" content="assets/images/<?= $page_image; ?>">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@prayermadueke">
     <meta name="twitter:description" content="<?php echo $page_description; ?>">
-    <meta name="twitter:image:alt" content="<?php echo $title; ?> — Prayer M. Madueke, <?php echo $tagline; ?>">
+    <meta name="twitter:image:alt" content="<?php echo $title; ?> — Emmanuel Atoe, <?php echo $tagline; ?>">
     <meta name="twitter:creator" content="@prayermadueke">
-    <meta name="twitter:title" content="<?php echo $title; ?> — Prayer M. Madueke, <?php echo $tagline; ?>">
+    <meta name="twitter:title" content="<?php echo $title; ?> — Emmanuel Atoe, <?php echo $tagline; ?>">
     <meta name="twitter:image" content="assets/images/<?= $page_image; ?>">
 
     <!-- Stylesheets -->
@@ -137,8 +137,8 @@
     <div class="about">
         <img class="animate reveal" src="assets/images/madueke/madueke2.jpg">
         <div class="content">
-            <h3 class="animate reveal">Prayer M. Madueke</h3>
-            <p class="animate reveal">Prayer Madueke is a Spiritual Warrior in the Lord’s Vineyard and founder of Prayer Emancipation Missions. An accomplished author, speaker, and expert on spiritual warfare and deliverance, he has published well over 100 books on every area of successful Christian living.<br><br>He is an acclaimed family and relationship counselor with several titles dealing with those critical areas in the lives of the children of God. He is blessed with a beautiful wife and 5 God-fearing children.<br><br>He travels to several countries each year speaking and conducting deliverance, breaking the yokes of demonic oppression, and setting captives free.</p>
+            <h3 class="animate reveal">Emmanuel Atoe</h3>
+            <p class="animate reveal">Emmanuel Atoe is a Spiritual Warrior in the Lord’s Vineyard and founder of Prayer Emancipation Missions. An accomplished author, speaker, and expert on spiritual warfare and deliverance, he has published well over 100 books on every area of successful Christian living.<br><br>He is an acclaimed family and relationship counselor with several titles dealing with those critical areas in the lives of the children of God. He is blessed with a beautiful wife and 5 God-fearing children.<br><br>He travels to several countries each year speaking and conducting deliverance, breaking the yokes of demonic oppression, and setting captives free.</p>
             <div id="social">
                 <ul>
                     <li class="animate reveal">
@@ -176,7 +176,7 @@
                 <p>Founder, Abundant Life Global Outreach</p>
             </div>
             <img class="svg decor" src="assets/images/icons/decor.svg">
-            <p class="comment">Great books from an amazing teacher. Prayer Madueke really brings to life the power we release into our lives and the world when we partner with the Creator to speak forth His word. So good! So empowering.</p>
+            <p class="comment">Great books from an amazing teacher. Emmanuel Atoe really brings to life the power we release into our lives and the world when we partner with the Creator to speak forth His word. So good! So empowering.</p>
         </div>
 
         <div class="review animate reveal">
@@ -186,7 +186,7 @@
                 <p>Bishop, Divine Grace Liberation Assembly Worldwide</p>
             </div>
             <img class="svg decor" src="assets/images/icons/decor.svg">
-            <p class="comment">These magnificent books by Prayer Madueke, will empower believers with the tools to boldly release decrees that will unlock the blessings of heaven, align hearts with the Word of God, and bring change to their lives. Bravo!</p>
+            <p class="comment">These magnificent books by Emmanuel Atoe, will empower believers with the tools to boldly release decrees that will unlock the blessings of heaven, align hearts with the Word of God, and bring change to their lives. Bravo!</p>
         </div>
 
         <div class="review animate reveal">
@@ -196,7 +196,7 @@
                 <p>SATGO in charge of Security, RCCG Worldwide</p>
             </div>
             <img class="svg decor" src="assets/images/icons/decor.svg">
-            <p class="comment">Prayer Madueke has found the keys to releasing the blessing of the Father through the spoken Word to create supernatural breakthroughs in the name of Jesus and by the power of the Spirit. Get ready for the most dramatic answers to prayer ever!</p>
+            <p class="comment">Emmanuel Atoe has found the keys to releasing the blessing of the Father through the spoken Word to create supernatural breakthroughs in the name of Jesus and by the power of the Spirit. Get ready for the most dramatic answers to prayer ever!</p>
         </div>
 
         <div class="review animate reveal">
@@ -327,7 +327,7 @@
 
 
 <footer id="footer" class="container" style="padding: 30px; grid-template-columns: 1fr 1fr;">
-    <p class="copyright">&copy; 2020 Prayer Madueke. All rights reserved.</p>
+    <p class="copyright">&copy; 2020 Emmanuel Atoe. All rights reserved.</p>
     <div id="social">
         <p>Connect with me</p>
         <span></span>

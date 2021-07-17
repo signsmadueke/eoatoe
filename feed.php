@@ -12,10 +12,10 @@
     * For demonstration purposes, the data is defined here.
     * In a real scenario it should be loaded from a database.
     */
-    $channel = array("title"        => "Prayer Madueke",
-                     "description"  => "Prayer M. Madueke, Christian Author of over 100 books on Amazon.",
+    $channel = array("title"        => "Emmanuel Atoe",
+                     "description"  => "Emmanuel Atoe, Christian Author of over 100 books on Amazon.",
                      "link"         => "https://www.madueke.com",
-                     "copyright"    => "Copyright (C) 2020 Prayer Madueke. All rights reserved.");
+                     "copyright"    => "Copyright (C) 2020 Emmanuel Atoe. All rights reserved.");
     
     // $items = array(
     //     array("title"       => "$devotion_title",

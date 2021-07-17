@@ -5,10 +5,11 @@
         $books = $result;
     }
 
-    $title = 'Prayer M. Madueke';
+    $page_name = "Home";
+    $title = 'Emmanuel Atoe';
     $tagline = "Christian Author & Speaker";
     $page_description = 'A leading christian author, speaker, and expert on spiritual warfare and deliverance. His 100+ books cover every area of successful christian living.';
-    $page_image = "madueke/prayermadueke.jpg";
+    $page_image = "eoatoe/eoatoe.jpg";
     $extraBodyClasses = 'dark';
     require_once 'inc/header.php';
 ?>

@@ -33,7 +33,7 @@ if (!empty($devotionals)) {
                     <h3><?= $devotion_title; ?></h3>
                 </a>
                 <div class="devotional-author">
-                    <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
+                    <img src="assets/images/madueke/icon.png" alt="Emmanuel Atoe">
                     <p><span>by </span><?= $devotion_author; ?></p>
                 </div>
                 <div class="devotional-date">

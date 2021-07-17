@@ -1,8 +1,8 @@
 <?php
-    $title = 'Donate — Prayer M. Madueke';
+    $title = 'Donate — Emmanuel Atoe';
     $tagline = "Christian Author & Speaker";
-    $page_description = 'Become a Ministry Partner, Donate to Prayer M. Madueke';
-    $page_image = "madueke/prayermadueke.jpg";
+    $page_description = 'Become a Ministry Partner, Donate to Emmanuel Atoe';
+    $page_image = "eoatoe/eoatoe.jpg";
     $extraBodyClasses = 'donate';
     require_once 'inc/header.php';
 ?>

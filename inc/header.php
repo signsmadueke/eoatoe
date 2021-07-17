@@ -7,7 +7,7 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="author" content="Emmanuel Atoe">
     <meta name="description" content="<?= $page_description; ?>">
-    <meta name="keywords" content="Prayer, Madueke, Emmanuel Atoe, Prayer Madueke, Christian Author, Christian, Author, Amazon, Religion, Spirituality, christianbook, devotion, faith, olukoya, prayer, prayer madueke, prayer rain, blessing prayer, prayer book, spiritual exercises.">
+    <meta name="keywords" content="Emmanuel Atoe, Emmanuel Atoe, Christian Author, Christian, Author, Amazon, Religion, Spirituality, christianbook, devotion, faith, olukoya, prayer, Emmanuel Atoe, prayer rain, blessing prayer, prayer book, spiritual exercises.">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -38,33 +38,6 @@
     <link rel="apple-touch-icon" sizes="120x120" href="favicon.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="favicon.png" />
     <meta name="theme-color" content="#000000">
-
-        
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131093422-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        gtag('config', 'UA-131093422-2');
-    </script>
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1957151911105775');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=1957151911105775&ev=PageView&noscript=1"/></noscript>
-    <!-- End Facebook Pixel Code -->
-
 </head>
 
 <body class="container <?php echo $extraBodyClasses; ?>">
@@ -82,33 +55,36 @@
 
     <nav>
         <ul>
-            <li class="<?php if ($title == "Home"){echo "active";} ?>">
+            <li class="<?php if ($page_name == "Home"){echo "active";} ?>">
                 <a href="/">Home</a>
             </li>
-            <li class="<?php if ($title == "Books"){echo "active";} ?>">
+            <li class="<?php if ($page_name == "Books"){echo "active";} ?>">
                 <a href="https://store.madueke.com">Books</a>
             </li>
-            <!-- <li class="<?php if ($title == "Free Gift"){echo "active";} ?>">
+            <!-- <li class="<?php if ($page_name == "Free Gift"){echo "active";} ?>">
                 <a href="free-gift.php">Free Gift</a>
             </li> -->
-            <!-- <li class="<?php if ($title == "Podcasts"){echo "active";} ?>">
+            <!-- <li class="<?php if ($page_name == "Podcasts"){echo "active";} ?>">
                 <a href="podcasts">Podcasts</a>
             </li> -->
-            <li class="<?php if ($title == "Meditations"){echo "active";} ?>">
+            <li class="<?php if ($page_name == "Meditations"){echo "active";} ?>">
                 <a href="meditations">Meditations</a>
             </li>
-            <li class="<?php if ($title == "Prayers"){echo "active";} ?>">
+            <li class="<?php if ($page_name == "Prayers"){echo "active";} ?>">
                 <a href="prayers">Prayers</a>
             </li>
-            <li class="<?php if ($title == "Counselling"){echo "active";} ?>">
+            <li class="<?php if ($page_name == "Counselling"){echo "active";} ?>">
                 <a href="counselling">Counselling</a>
             </li>
-            <li class="<?php if ($title == "Contact"){echo "active";} ?>">
+            <li class="<?php if ($page_name == "About"){echo "active";} ?>">
+                <a href="about">About</a>
+            </li>
+            <li class="<?php if ($page_name == "Contact"){echo "active";} ?>">
                 <a href="contact">Contact</a>
             </li>
-            <li class="<?php if ($title == "Donate"){echo "active";} ?>">
+            <!-- <li class="<?php if ($page_name == "Donate"){echo "active";} ?>">
                 <a href="donate">Donate</a>
-            </li>
+            </li> -->
         </ul>
     </nav>
 
@@ -143,33 +119,36 @@
 
     <nav>
         <ul>
-            <li class="<?php if ($title == "Home"){echo "active";} ?>">
+            <li class="<?php if ($page_name == "Home"){echo "active";} ?>">
                 <a href="/">Home</a>
             </li>
-            <li class="<?php if ($title == "Books"){echo "active";} ?>">
+            <li class="<?php if ($page_name == "Books"){echo "active";} ?>">
                 <a href="https://store.madueke.com">Books</a>
             </li>
-            <!-- <li class="<?php if ($title == "Free Gift"){echo "active";} ?>">
+            <!-- <li class="<?php if ($page_name == "Free Gift"){echo "active";} ?>">
                 <a href="free-gift.php">Free Gift</a>
             </li> -->
-            <!-- <li class="<?php if ($title == "Podcasts"){echo "active";} ?>">
+            <!-- <li class="<?php if ($page_name == "Podcasts"){echo "active";} ?>">
                 <a href="podcasts">Podcasts</a>
             </li> -->
-            <li class="<?php if ($title == "Meditations"){echo "active";} ?>">
+            <li class="<?php if ($page_name == "Meditations"){echo "active";} ?>">
                 <a href="meditations">Meditations</a>
             </li>
-            <li class="<?php if ($title == "Prayers"){echo "active";} ?>">
+            <li class="<?php if ($page_name == "Prayers"){echo "active";} ?>">
                 <a href="prayers">Prayers</a>
             </li>
-            <li class="<?php if ($title == "Counselling"){echo "active";} ?>">
+            <li class="<?php if ($page_name == "Counselling"){echo "active";} ?>">
                 <a href="counselling">Counselling</a>
             </li>
-            <li class="<?php if ($title == "Contact"){echo "active";} ?>">
+            <li class="<?php if ($page_name == "About"){echo "active";} ?>">
+                <a href="about">About</a>
+            </li>
+            <li class="<?php if ($page_name == "Contact"){echo "active";} ?>">
                 <a href="contact">Contact</a>
             </li>
-            <li class="<?php if ($title == "Donate"){echo "active";} ?>">
+            <!-- <li class="<?php if ($page_name == "Donate"){echo "active";} ?>">
                 <a href="donate">Donate</a>
-            </li>
+            </li> -->
         </ul>
     </nav>
     

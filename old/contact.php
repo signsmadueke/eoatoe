@@ -8,15 +8,15 @@
     <div class="container">
         <div class="align-items-center row">
             <div>
-                <a href="mailto:hello@madueke.com">
+                <a href="mailto:hello@eoatoe.com">
                     <h1>General</h1>
-                    <a href="mailto:hello@madueke.com">hello@madueke.com</a>
+                    <a href="mailto:hello@eoatoe.com">hello@eoatoe.com</a>
                 </a>
             </div>
             <div>
-                <a href="mailto:requests@madueke.com">
+                <a href="mailto:requests@eoatoe.com">
                     <h1>Prayer Requests</h1>
-                    <a href="mailto:requests@madueke.com">requests@madueke.com</a>
+                    <a href="mailto:requests@eoatoe.com">requests@eoatoe.com</a>
                 </a>
             </div>
         </div>

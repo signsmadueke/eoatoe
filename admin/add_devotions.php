@@ -25,7 +25,7 @@ blockUrlHackers();
                         <div class="card-title-wrap bar-success">
                             <h4 class="card-title" id="basic-layout-form">Add Devotion</h4>
                         </div>
-                        <p class="mb-0">Devotions added here are strictly Prayer Madueke's Devotions.</p>
+                        <p class="mb-0">Devotions added here are strictly Emmanuel Atoe's Devotions.</p>
                     </div>
                     <div class="card-body">
                         <div class="px-3">
@@ -53,7 +53,7 @@ blockUrlHackers();
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="author">Devotion Author</label>
-                                                <input type="text" id="author" value="Prayer M. Madueke" class="form-control" name="devAuthor">
+                                                <input type="text" id="author" value="Emmanuel Atoe" class="form-control" name="devAuthor">
                                             </div>
                                         </div>
 
