@@ -1,9 +1,9 @@
 <?php
     require_once "admin/includes/functions/config.php";
 
-    $result = fetchAllDesc("devotions", "devotion_id", 0, 6);
+    $result = fetchAllDesc("prayers", "prayer_id", 0, 6);
     if ($result) {
-        $devotionals = $result;
+        $prayers = $result;
     }
 
 
@@ -24,38 +24,38 @@
         
     <div class="devotionals" id="devotionals">
         <?php
-        if (!empty($devotionals)) {
-            foreach ($devotionals as $devotional) {
-                extract($devotional);
-                $devotion_title = str_replace("</b>", "'", $devotion_title);
-                $devotion_body = str_replace("</b>", "'", $devotion_body);
-                $devotion_link = strtolower(str_replace(" ", "-", $devotion_title));
-                $devotion_link = str_replace("'", "</b>", $devotion_link);
-                $htmltoplaintext = strip_tags($devotion_body);
+        if (!empty($prayers)) {
+            foreach ($prayers as $prayer) {
+                extract($prayer);
+                $prayer_title = str_replace("</b>", "'", $prayer_title);
+                $prayer_body = str_replace("</b>", "'", $prayer_body);
+                $prayer_link = strtolower(str_replace(" ", "-", $prayer_title));
+                $prayer_link = str_replace("'", "</b>", $prayer_link);
+                $htmltoplaintext = strip_tags($prayer_body);
                 ?>
 
 
                 <div class="devotional" style="opacity: 0;">
-                    <a href="devotional?devotion=<?= $devotion_link; ?>" class="image">
-                        <img src="assets/images/devotionals/<?= $devotion_image; ?>" alt="">
-                        <img class="shadow" src="assets/images/devotionals/<?= $devotion_image; ?>" alt="">
+                    <a href="prayer?prayer=<?= $prayer_link; ?>" class="image">
+                        <img src="assets/images/devotionals/<?= $prayer_image; ?>" alt="">
+                        <img class="shadow" src="assets/images/devotionals/<?= $prayer_image; ?>" alt="">
                     </a>
 
                     <div class="details">
-                        <a href="devotional?devotion=<?= $devotion_link; ?>">
-                            <h3><?= $devotion_title; ?></h3>
+                        <a href="prayer?prayer=<?= $prayer_link; ?>">
+                            <h3><?= $prayer_title; ?></h3>
                         </a>
                         <div class="devotional-author">
                             <img src="assets/images/madueke/icon.png" alt="Emmanuel Atoe">
-                            <p><span>by </span><?= $devotion_author; ?></p>
+                            <p><span>by </span><?= $prayer_author; ?></p>
                         </div>
                         <div class="devotional-date">
                             <p><span>Posted on </span><?= date("D, d M Y", strtotime($datePosted)); ?></p>
                         </div>
-                        <a href="devotional?devotion=<?= $devotion_link; ?>" class="description">
+                        <a href="prayer?prayer=<?= $prayer_link; ?>" class="description">
                             <div><?= $htmltoplaintext; ?></div>
                         </a>
-                        <a href="devotional?devotion=<?= $devotion_link; ?>" class="btn btn-spaced">
+                        <a href="prayer?prayer=<?= $prayer_link; ?>" class="btn btn-spaced">
                             <span>Read Devotional</span>
                             <img class="svg" src="assets/images/icons/arrow-right.svg">
                         </a>
@@ -92,7 +92,7 @@
     <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 </section>
 
-<script src="inc/polling/js/all_devotions.js"></script>
+<script src="inc/polling/js/all_prayers.js"></script>
 <?php
     require_once 'inc/footer.php';
 ?>
