@@ -3677,7 +3677,7 @@ body.sidebar-opened {
 
 #devotional-post {
 	display: grid;
-	grid-gap: 50px;
+	grid-gap: 0px;
 	width: 100%;
 	max-width: 900px;
 	justify-self: center;
@@ -3691,6 +3691,7 @@ body.sidebar-opened {
 
 	h3 {
 		border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+		margin-bottom: 20px;
 		padding-bottom: 20px;
 		padding-top: 50px;
 	}
@@ -3722,7 +3723,7 @@ body.sidebar-opened {
 		list-style-type: decimal;
 		padding-left: 30px;
 		display: grid;
-		grid-gap: 20px;
+		grid-gap: 10px;
 
 		li {
 			font-size: 15px;

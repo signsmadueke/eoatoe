@@ -54,7 +54,7 @@
             $meditation_subtitle = str_replace("</b>", "'", $meditation_subtitle);
             $meditation_body = str_replace("</b>", "'", $meditation_body); ?>
 
-                <section id="devotional-header" class="desktop">
+                <!-- <section id="devotional-header" class="desktop">
                     <img src="assets/images/devotionals/<?= $meditation_subimage; ?>" alt="<?= $meditation_title; ?>">
                     <img class="shadow" src="assets/images/devotionals/<?= $meditation_subimage; ?>">
                 </section>
@@ -62,7 +62,7 @@
                 <section id="devotional-header" class="mobile">
                     <img src="assets/images/devotionals/<?= $meditation_image; ?>" alt="<?= $meditation_title; ?>">
                     <img class="shadow" src="assets/images/devotionals/<?= $meditation_image; ?>">
-                </section>
+                </section> -->
 
                 <section id="devotional-details">
                     <h1 class="devotional-name"><?= $meditation_title; ?></h1>
