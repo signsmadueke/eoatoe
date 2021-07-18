@@ -1,6 +1,6 @@
 <?php
     $title = 'Free Gift';
-    $tagline = "Christian Author & Speaker";
+    $tagline = "Christian Counsellor & Author";
     $page_description = 'A leading christian author, speaker, and expert on spiritual warfare and deliverance. His 100+ books cover every area of successful christian living.';
     $page_image = "eoatoe/eoatoe.jpg";
     $extraBodyClasses = '';

@@ -1,6 +1,6 @@
 <?php
     $title = 'Donate — Emmanuel Atoe';
-    $tagline = "Christian Author & Speaker";
+    $tagline = "Christian Counsellor & Author";
     $page_description = 'Become a Ministry Partner, Donate to Emmanuel Atoe';
     $page_image = "eoatoe/eoatoe.jpg";
     $extraBodyClasses = 'donate';

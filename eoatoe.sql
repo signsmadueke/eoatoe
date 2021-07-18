@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jul 17, 2021 at 01:25 PM
+-- Generation Time: Jul 17, 2021 at 01:51 PM
 -- Server version: 5.7.30
 -- PHP Version: 7.4.9
 
@@ -185,9 +185,8 @@ CREATE TABLE `newbooks` (
 --
 
 INSERT INTO `newbooks` (`book_id`, `book_title`, `book_author`, `book_image`, `book_description`, `date_added`) VALUES
-(1, 'A Moment of Prayer', 'Emmanuel Atoe', 'a-moment-of-prayer.jpg', 'There is nothing impossible with God but praying while breaking the law of God makes your prayers ineffective. Therefore, in this book, A Moment of Prayer, everyone under this program is expected to pray according to the rule, not against the law supporting it.', '2021-07-16'),
-(2, 'The Believer\'s Handbook', 'Emmanuel Atoe', 'the-believers-handbook.jpg', 'This book is highly recommendable for all. It is a book that will enhance your spiritual life, ignite the fire in you. It is a book that will open you heart to the mystery of faith.\nThe inestimable value of this book to every soul cannot be over emphasized. With this book you will get to know about the pillars of true faith in God. If you have been doubting your salvation, Christian life, the person and baptism of the Holy Ghost etc., this book is all you need.\nMoreover, it is more favorable to believers who are still in faith, you will find all the encouragement and comfort you need in this race and your work with the Lord Jesus Christ.', '2021-07-16'),
-(3, 'Church Growth in the Acts of the Apostles', 'Emmanuel Atoe', 'church-growth-in-the-acts-of-the-apostles.jpg', 'The Church exists to communicate the Gospel of Jesus Christ and the mind of God, as revealed in His Word to the world. We are Christ ambassadors – His point of contact to all men in every generation (2 Corinthians 5:20).The Church exists to spread the good news of redemption and reproduce itself in the lives of the human race. The Church is the most powerful corporate body that is capable of commanding the attention of heaven on earth. The Church is God’s idea and product, and so possesses an inbuilt capacity for success. The objective of this book is to get you acquainted with the purpose of the church in general, and the vision of Victory Sanctuary in particular.', '2021-07-16');
+(4, 'Wisdom for Your Best Life', 'Emmanuel Atoe', 'wisdom-for-your-best-life.jpg', 'There is nothing impossible with God but praying while breaking the law of God makes your prayers ineffective. Therefore, in this book, A Moment of Prayer, everyone under this program is expected to pray according to the rule, not against the law supporting it.', '2021-07-16'),
+(5, 'Building Healthy Relationships', 'Emmanuel Atoe', 'building-healthy-relationships.jpg', 'This book is highly recommendable for all. It is a book that will enhance your spiritual life, ignite the fire in you. It is a book that will open you heart to the mystery of faith.\nThe inestimable value of this book to every soul cannot be over emphasized. With this book you will get to know about the pillars of true faith in God. If you have been doubting your salvation, Christian life, the person and baptism of the Holy Ghost etc., this book is all you need.\nMoreover, it is more favorable to believers who are still in faith, you will find all the encouragement and comfort you need in this race and your work with the Lord Jesus Christ.', '2021-07-16');
 
 -- --------------------------------------------------------
 

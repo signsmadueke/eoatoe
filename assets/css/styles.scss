@@ -1040,6 +1040,10 @@ body.container {
 	&.contact {
 		grid-template-rows: max-content 1fr max-content max-content 1fr max-content;
 	}
+
+	&.about {
+		grid-template-rows: max-content 1fr max-content max-content 1fr max-content;
+	}
 }
 
 #sidebar {
@@ -3175,6 +3179,8 @@ body.sidebar-opened {
 		grid-gap: 20px;
 		text-align: center;
 		justify-items: center;
+		max-width: 800px;
+		margin: 0 auto;
 
 		img, svg {
 			width: 100px;
@@ -3191,6 +3197,40 @@ body.sidebar-opened {
 			font-size: 45px;
 			line-height: 50px;
 			color: #fff;
+		}
+	}
+}
+
+#about-the-author {
+	display: grid;
+	grid-gap: 50px;
+	grid-auto-flow: row;
+	max-width: 800px;
+	margin: 0 auto;
+
+	p{
+		font-size: 16px;
+		line-height: 1.9em;
+		text-align: justify;
+		color: #FFFFFF;
+		opacity: 0.8;
+	}
+
+	.btn-link {
+		justify-self: center;
+		padding: 5px 0px !important;
+		grid-gap: 7px !important;
+		border: none !important;
+		border-bottom: 1px dashed rgba(255, 209, 184, 0.7) !important;
+		background-color: transparent !important;
+		width: max-content !important;
+
+		&:hover {
+			border-bottom: 1px dashed rgb(255, 209, 184) !important;
+		}
+
+		span {
+			color: #ffffff !important;
 		}
 	}
 }

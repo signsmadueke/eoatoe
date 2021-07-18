@@ -1,13 +1,18 @@
 <?php
     require_once "admin/includes/functions/config.php";
-    $result = fetchAllDesc("books", "book_id", 0, 4);
+    $result = fetchAllDesc("newbooks", "book_id", 0, 2);
     if ($result) {
-        $books = $result;
+        $newbooks = $result;
+    }
+
+    $result2 = fetchAllDesc("books", "book_id", 0, 2);
+    if ($result2) {
+        $books = $result2;
     }
 
     $page_name = "Home";
     $title = 'Emmanuel Atoe';
-    $tagline = "Christian Author & Speaker";
+    $tagline = "Christian Counsellor & Author";
     $page_description = 'A leading christian author, speaker, and expert on spiritual warfare and deliverance. His 100+ books cover every area of successful christian living.';
     $page_image = "eoatoe/eoatoe.jpg";
     $extraBodyClasses = 'dark';
@@ -22,7 +27,7 @@
     <div class="title">
         <h3>Books</h3>
         
-        <a href="https://store.madueke.com" class="btn btn-chevron btn-link">
+        <a href="books" class="btn btn-chevron btn-link">
             <span>See all Books</span>
             <img class="svg" src="assets/images/icons/arrow-top-right.svg">
         </a>
@@ -30,6 +35,19 @@
 	
 	<div id="books">
         <?php
+            if (!empty($newbooks)) {
+                foreach ($newbooks as $book) {
+                    extract($book);
+                    $book_titledisplay = str_replace("</b>", "'", $book_title);
+                    $book_link = strtolower(str_replace("'", "</b>", $book_title));
+                    $book_link = strtolower(str_replace(" ", "-", $book_title));
+                    ?>
+                    <a alt="<?= $book_titledisplay; ?>" href="newbook?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
+                        <div class="line"></div>
+                    </a>
+                <?php } } ?>   
+
+       <?php
             if (!empty($books)) {
                 foreach ($books as $book) {
                     extract($book);

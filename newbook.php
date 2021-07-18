@@ -6,7 +6,7 @@ if (isset($_GET['book'])) {
     // $book_link = str_replace("</b>", "'", $book_link);
     $book_link = str_replace("'", "</b>", $book_link);
 
-    $result = whereQuote("books", "book_title", "$book_link");
+    $result = whereQuote("newbooks", "book_title", "$book_link");
     if ($result) {
         $books = $result;
     }
@@ -15,8 +15,8 @@ if (isset($_GET['book'])) {
     if ($response) {
         $otherbooks = $response;
     }
- 
-    $response2 = getOtherBooksDesc("books", "book_title", $book_link, "book_id", 1);
+
+    $response2 = getOtherBooksDesc("newbooks", "book_title", $book_link, "book_id", 1);
     if ($response2) {
         $otherbooksDesc = $response2;
     }
@@ -35,9 +35,8 @@ if (isset($_GET['book'])) {
         $page_image = "books/" . $image['book_image'];
     }
 
-    $page_name = "Books";
-    $title = $book_link;
-    $tagline = "Emmanuel Atoe — Christian Counsellor & Author";
+$title = $book_link;
+$tagline = "Emmanuel Atoe, Christian Author of over 100 books on Amazon";
 $extraBodyClasses = '';
 require_once 'inc/header.php';
 ?>
@@ -62,59 +61,16 @@ require_once 'inc/header.php';
                 <div class="shadow">
                     <img src="assets/images/books/<?= $book_image; ?>">
                 </div>
-                <a href="https://read.amazon.com/kp/embed?asin=<?= $book_kindle_asin; ?>" target="_blank" class="button">
-                    <span>Preview Book</span>
-                    <img class="svg" src="assets/images/icons/arrow-top-right.svg">
-                </a>
             </div>
             <!-- <img class="book-image animate reveal" src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>"> -->
 
             <div class="details">
                 <h1 class="book-title animate reveal"><?= $book_title; ?></h1>
 
-                <div class="channels animate reveal">
-                    <div class="formats">
-                        <div class="format">
-                            <h1 class="price">&#36;<?= $book_kindle_price; ?></h1>
-                            
-                            <p class="name">Ebook</p>
-                            
-                            <a href="https://www.amazon.com/dp/<?= $book_kindle_asin; ?>" target="_blank" class="buy-btn" >
-                                <img class="svg" src="assets/images/formats/kindle.svg">
-                            </a>
-                        </div>
-                    
-                        <div class="format">
-                            <h1 class="price">&#36;<?= $book_paperback_price; ?></h1>
-                            
-                            <p class="name">Paperback</p>
-
-                            <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" target="_blank" class="buy-btn" >
-                            <img class="svg" src="assets/images/formats/amazon.svg">
-                        </a>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="description animate reveal">
                     <h6 class="title">Synopsis</h6>
                     <div class="text"><?= $book_description; ?></div>
                     <a class="expand-description btn btn-chevron" href="javascript:void(0)"><span class="read-more">Read More</span><span class="read-less">Read Less</span> <img class="svg" src="assets/images/icons/chevron-left.svg"></a>
-                </div>
-
-                <div class="attributes animate reveal">
-                    <h6 class="title">Book Details</h6>
-
-                    <div class="book-attributes">
-                        <div class="pages">
-                            <img src="assets/images/icons/pages.svg">
-                            <p><?= $total_book_page; ?><span> pages</span></p>
-                        </div>
-
-                        <div class="pages">
-                            <p><span>ISBN: </span><?= $book_isbn; ?></p>
-                        </div>
-                    </div>
                 </div>
             </div>
         <?php } } ?>
@@ -152,7 +108,7 @@ require_once 'inc/header.php';
             $book_link = strtolower(str_replace(" ", "-", $book_title));
              ?>
 
-            <a href="book?book=<?= $book_link; ?>" class="next-book">
+            <a href="newbook?book=<?= $book_link; ?>" class="next-book">
                 <div class="btn btn-chevron">
                     <span>Next Book</span>
                     <img class="svg" src="assets/images/icons/chevron-right.svg">
