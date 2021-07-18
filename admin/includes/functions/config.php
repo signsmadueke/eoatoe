@@ -1,9 +1,14 @@
 <?php
 session_start();
 
+// define("HOST", "localhost");
+// define("USER", "root");
+// define("PASSWORD", "root");
+// define("DBNAME", "eoatoe");
+
 define("HOST", "localhost");
 define("USER", "root");
-define("PASSWORD", "root");
+define("PASSWORD", "");
 define("DBNAME", "eoatoe");
 
 $link = mysqli_connect(HOST, USER, PASSWORD, DBNAME);

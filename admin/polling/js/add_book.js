@@ -24,7 +24,7 @@
               document.getElementById("submit_btn").className = "btn btn-success";
           } else {
               let errors = JSON.parse(r);
-              toastr.error(errors,"Operation Failed");
+              toastr.error(`${errors}`,"Operation Failed");
               document.getElementById("submit_btn").innerHTML = "<i class='ft-alert-circle'></i> Try Again";
               document.getElementById("submit_btn").className = "btn btn-danger";
           }

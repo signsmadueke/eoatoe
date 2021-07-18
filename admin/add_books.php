@@ -78,6 +78,22 @@
                                             </div>
                                         </div>
                                     </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="kindle">Book Kindle Asin</label>
+                                                <input type="text" id="kindle" class="form-control" name="bookKindleAsin">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="paperback">Book Paperback Asin</label>
+                                                <input type="text" id="paperback" class="form-control" name="bookPaperbackAsin">
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <div class="row">
                                         <div class="col-md-12">

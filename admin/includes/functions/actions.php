@@ -95,6 +95,18 @@ function AddBook($post) {
         $errors[] = "Book Paperback Price is empty" . "<br>";
     }
 
+    if (!empty($bookPaperbackAsin)) {
+        $paperback_asin = sanitize($bookPaperbackAsin);
+    } else {
+        $errors[] = "Book Paperback Asin is empty" . "<br>";
+    }
+    
+    if (!empty($bookKindleAsin)) {
+        $kindle_asin = sanitize($bookKindleAsin);
+    } else {
+        $errors[] = "Kindle Asin is empty" . "<br>";
+    }
+
     if (isset($_FILES['bookImage'])) {
         $image = sanitize($_FILES['bookImage']['name']);
         $tmp_image = $_FILES['bookImage']['tmp_name'];
@@ -114,7 +126,7 @@ function AddBook($post) {
     $dateAdded = date("Y-m-d");
 
     if (!$errors) {
-        $sql = "INSERT INTO books (book_title, book_author, book_image, book_description, total_book_page, book_isbn, book_kindle_price, book_paperback_price, date_added) VALUES ('$title', '$author', '$image', '$description', '$pages', '$isbn', '$kindle', '$paperback', '$dateAdded')";
+        $sql = "INSERT INTO books (book_title, book_author, book_image, book_description, total_book_page, book_isbn, book_kindle_price, book_paperback_price, book_paperback_asin, book_kindle_asin, date_added) VALUES ('$title', '$author', '$image', '$description', '$pages', '$isbn', '$kindle', '$paperback', '$paperback_asin', '$kindle_asin', '$dateAdded')";
 
         $result = validateQuery($sql);
         if ($result) {
