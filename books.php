@@ -62,6 +62,8 @@
     </div>
 </section>
 
+<div id="space"></div>
+
 <section id="all-books">
     
     <h1 class="section-title animated reveal">Books in Progress</h1>
@@ -101,6 +103,9 @@
 
     </div>
 </section>
+
+<div id="space"></div>
+
 <!-- 
 <script src="inc/polling/js/all_books.js"></script>
 <script src="inc/polling/js/search.js"></script> -->

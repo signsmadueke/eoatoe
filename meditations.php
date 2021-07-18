@@ -36,19 +36,10 @@ if (!empty($meditations)) {
 
 
         <div class="devotional animated reveal">
-            <a href="meditation?meditation=<?= $meditation_link; ?>" class="image">
-                <img src="assets/images/devotionals/<?= $meditation_image; ?>" alt="">
-                <img class="shadow" src="assets/images/meditations/<?= $meditation_image; ?>" alt="">
-            </a>
-
             <div class="details">
                 <a href="meditation?meditation=<?= $meditation_link; ?>">
                     <h3><?= $meditation_title; ?></h3>
                 </a>
-                <div class="devotional-author">
-                    <img src="assets/images/madueke/icon.png" alt="Emmanuel Atoe">
-                    <p><span>by </span><?= $meditation_author; ?></p>
-                </div>
                 <div class="devotional-date">
                     <p><span>Posted on </span><?= date("D, d M Y", strtotime($datePosted)); ?></p>
                 </div>
@@ -62,12 +53,13 @@ if (!empty($meditations)) {
                     </svg>
                 </a>
             </div>
-
         </div>
     <?php } } ?>
     </div>
 
 </section>
+
+<div id="space"></div>
 
 <!-- <script src="inc/polling/js/all_meditations.js"></script> -->
 <?php

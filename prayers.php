@@ -36,19 +36,10 @@ if (!empty($prayers)) {
 
 
         <div class="devotional animated reveal">
-            <a href="prayer?prayer=<?= $prayer_link; ?>" class="image">
-                <img src="assets/images/devotionals/<?= $prayer_image; ?>" alt="">
-                <img class="shadow" src="assets/images/devotionals/<?= $prayer_image; ?>" alt="">
-            </a>
-
             <div class="details">
                 <a href="prayer?prayer=<?= $prayer_link; ?>">
                     <h3><?= $prayer_title; ?></h3>
                 </a>
-                <div class="devotional-author">
-                    <img src="assets/images/madueke/icon.png" alt="Emmanuel Atoe">
-                    <p><span>by </span><?= $prayer_author; ?></p>
-                </div>
                 <div class="devotional-date">
                     <p><span>Posted on </span><?= date("D, d M Y", strtotime($datePosted)); ?></p>
                 </div>
@@ -62,12 +53,13 @@ if (!empty($prayers)) {
                     </svg>
                 </a>
             </div>
-
         </div>
     <?php } } ?>
     </div>
 
 </section>
+
+<div id="space"></div>
 
 <!-- <script src="inc/polling/js/all_prayers.js"></script> -->
 <?php

@@ -36,19 +36,10 @@ if (!empty($counselling)) {
 
 
         <div class="devotional animated reveal">
-            <a href="counsel?counsel=<?= $counsel_link; ?>" class="image">
-                <img src="assets/images/devotionals/<?= $counsel_image; ?>" alt="">
-                <img class="shadow" src="assets/images/counselling/<?= $counsel_image; ?>" alt="">
-            </a>
-
             <div class="details">
                 <a href="counsel?counsel=<?= $counsel_link; ?>">
                     <h3><?= $counsel_title; ?></h3>
                 </a>
-                <div class="devotional-author">
-                    <img src="assets/images/madueke/icon.png" alt="Emmanuel Atoe">
-                    <p><span>by </span><?= $counsel_author; ?></p>
-                </div>
                 <div class="devotional-date">
                     <p><span>Posted on </span><?= date("D, d M Y", strtotime($datePosted)); ?></p>
                 </div>
@@ -62,12 +53,13 @@ if (!empty($counselling)) {
                     </svg>
                 </a>
             </div>
-
         </div>
     <?php } } ?>
     </div>
 
 </section>
+
+<div id="space"></div>
 
 <!-- <script src="inc/polling/js/all_counselling.js"></script> -->
 <?php

@@ -7,6 +7,7 @@
 
 <?php require_once "includes/templates/header.php"; ?>
 <body data-col="2-columns" class=" 2-columns ">
+
 <!-- ////////////////////////////////////////////////////////////////////////////-->
 <div class="wrapper">
 
@@ -94,7 +95,7 @@
 
                                     <div class="form-group">
                                         <label for="projectinput8">Book Description</label>
-                                        <textarea id="" rows="5" id="editor" class="form-control" name="bookDescription"></textarea>
+                                        <textarea id="summernote" rows="5" id="editor" class="form-control" name="bookDescription"></textarea>
                                     </div>
                                 </div>
 
@@ -115,6 +116,24 @@
 
         </div>
     </div>
+
+  
+    <script>
+      $('#summernote').summernote({
+        placeholder: 'Hello stand alone ui',
+        tabsize: 2,
+        height: 120,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+      });
+    </script>
 
 <script src="polling/js/add_book.js"></script>
 <?php require_once "includes/templates/footer.php"; ?>

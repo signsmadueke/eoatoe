@@ -26,14 +26,11 @@ if ($result) {
                                         <div class="col-md-6 col-lg-4">
                                             <figure class="effect-winston">
                                                 <img src="../assets/images/books/<?= $book_image; ?>" width="100%" alt="img06">
-                                                <figcaption>
-                                                    <p>
-
-                                                        <a href="edit_book?book_id=<?= $book_id; ?>"><i class="fa fa-fw fa-edit"></i></a>
-                                                        <a class="text-danger" data-id="<?= $book_id; ?>" onclick="delete_book(this)"><i class="fa fa-fw fa-trash-o"></i></a>
-                                                    </p>
-                                                </figcaption>
                                             </figure>
+                                            <p>
+                                                <a href="edit_book?book_id=<?= $book_id; ?>"><h5><i class="fa fa-fw fa-edit"></i> Edit</h5></a>
+                                                <a class="text-danger" data-id="<?= $book_id; ?>" onclick="delete_book(this)"><h5><i class="fa fa-fw fa-trash-o"></i> Delete</h5></a>
+                                            </p>
                                             <h5 class="text-center text-light rounded p-1" style="width: 95%; background: linear-gradient(to right, saddlebrown, firebrick);"><b><?= $book_title; ?></b></h5>
                                         </div>
 
