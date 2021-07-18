@@ -4028,7 +4028,7 @@ body.sidebar-opened .copyright {
 #devotional-post {
   display: -ms-grid;
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 0px;
   width: 100%;
   max-width: 900px;
   -ms-grid-column-align: center;
@@ -4045,6 +4045,7 @@ body.sidebar-opened .copyright {
 
 #devotional-post h3 {
   border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+  margin-bottom: 20px;
   padding-bottom: 20px;
   padding-top: 50px;
 }
@@ -4077,7 +4078,7 @@ body.sidebar-opened .copyright {
   padding-left: 30px;
   display: -ms-grid;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 
 #devotional-post ol li {
