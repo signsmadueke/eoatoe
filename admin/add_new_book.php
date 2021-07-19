@@ -1,21 +1,21 @@
 <?php
-    require_once "includes/functions/config.php";
-    blockUrlHackers();
+require_once "includes/functions/config.php";
+blockUrlHackers();
 
 ?>
 
 
 <?php require_once "includes/templates/header.php"; ?>
-<body data-col="2-columns" class=" 2-columns ">
 
-<!-- ////////////////////////////////////////////////////////////////////////////-->
+    <body data-col="2-columns" class=" 2-columns ">
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
 <div class="wrapper">
 
 
-    <?php require_once "includes/templates/sidebar.php"; ?>
+<?php require_once "includes/templates/sidebar.php"; ?>
 
 
-    <?php require_once "includes/templates/topbar.php"; ?>
+<?php require_once "includes/templates/topbar.php"; ?>
 
     <div class="main-panel">
         <div class="main-content">
@@ -23,7 +23,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="card-title-wrap bar-success">
-                            <h4 class="card-title" id="basic-layout-form">Add Book</h4>
+                            <h4 class="card-title" id="basic-layout-form">Add New Book</h4>
                         </div>
                         <p class="mb-0">Books added here are strictly Emmanuel Atoe's Books.</p>
                     </div>
@@ -49,53 +49,6 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="pages">Total Book Page</label>
-                                                <input type="number" id="pages" class="form-control" name="bookPages">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="isbn">Book Isbn</label>
-                                                <input type="text" id="isbn" class="form-control" name="bookIsbn">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="kindle">Book Kindle Price</label>
-                                                <input type="number" id="kindle" class="form-control" name="bookKindlePrice">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="paperback">Book Paperback Price</label>
-                                                <input type="number" id="paperback" class="form-control" name="bookPaperbackPrice">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="kindle">Book Kindle Asin</label>
-                                                <input type="text" id="kindleAsin" class="form-control" name="bookKindleAsin">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="paperback">Book Paperback Asin</label>
-                                                <input type="text" id="paperbackAsin" class="form-control" name="bookPaperbackAsin">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="date">Date Added</label>
@@ -111,7 +64,7 @@
 
                                     <div class="form-group">
                                         <label for="projectinput8">Book Description</label>
-                                        <textarea id="summernote" rows="5" id="editor" class="form-control" name="bookDescription"></textarea>
+                                        <textarea id="summernote" rows="5" class="form-control" name="bookDescription"></textarea>
                                     </div>
                                 </div>
 
@@ -133,5 +86,5 @@
         </div>
     </div>
 
-<script src="polling/js/add_book.js"></script>
+    <script src="polling/js/add_newbook.js"></script>
 <?php require_once "includes/templates/footer.php"; ?>

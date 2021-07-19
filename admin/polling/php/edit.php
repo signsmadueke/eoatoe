@@ -41,3 +41,16 @@ if (isset($_GET['freebook_id'])) {
         echo json_encode($errors);
     }
 }
+
+if (isset($_GET['newbook_id'])) {
+    $newbook_id = $_GET['newbook_id'];
+
+    $result = editNewBook($_POST, $newbook_id);
+
+    if ($result === true) {
+        echo "true";
+    } else {
+        $errors = $result;
+        echo json_encode($errors);
+    }
+}

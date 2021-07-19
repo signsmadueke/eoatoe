@@ -3,7 +3,7 @@
 require_once "../../includes/functions/config.php";
 blockUrlHackers();
 
-$result = fetchAll("freebooks", "book_id", 0, 9);
+$result = fetchAll("freebooks", "book_id");
 
 if ($result) {
     $freebooks = $result;

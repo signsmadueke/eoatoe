@@ -3,7 +3,7 @@
 require_once "../../includes/functions/config.php";
 blockUrlHackers();
 
-$result = fetchAll("meditations", "meditation_id", 0, 9);
+$result = fetchAll("meditations", "meditation_id");
 
 if ($result) {
     $meditations = $result;

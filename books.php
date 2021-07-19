@@ -35,7 +35,7 @@
                 extract($book);
                 $book_titledisplay = str_replace("</b>", "'", $book_title);
                 $book_link = strtolower(str_replace("'", "</b>", $book_title));
-                $book_link = strtolower(str_replace(" ", "-", $book_title));
+                $book_link = strtolower(str_replace(" ", "-", $book_link));
                 ?>
                 <div class="buk animate reveal">
                     <a alt="<?= $book_titledisplay; ?>" href="book?book=<?= $book_link; ?>" class="book-image">
@@ -76,7 +76,7 @@
                 extract($newbook);
                 $book_titledisplay = str_replace("</b>", "'", $book_title);
                 $book_link = strtolower(str_replace("'", "</b>", $book_title));
-                $book_link = strtolower(str_replace(" ", "-", $book_title));
+                $book_link = strtolower(str_replace(" ", "-", $book_link));
                 ?>
                 <div class="buk animate reveal">
                     <a alt="<?= $book_titledisplay; ?>" href="newbook?book=<?= $book_link; ?>" class="book-image">

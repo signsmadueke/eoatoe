@@ -1,3 +1,20 @@
+<script>
+      $('#summernote').summernote({
+        placeholder: 'Hello stand alone ui',
+        tabsize: 2,
+        height: 120,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+      });
+    </script>
+
 <footer class="footer footer-static footer-light">
           <p class="clearfix text-muted text-center px-2"><span>Copyright  &copy; <?= date("Y"); ?> All rights reserved. </span></p>
         </footer>
@@ -28,6 +45,6 @@
     <!-- <script src="app-assets/js/dashboard-ecommerce.js"></script> -->
     <!-- END PAGE LEVEL JS-->
     <script src="app-assets/js/toastr.min.js"></script>
-
+    
 </body>
 </html>

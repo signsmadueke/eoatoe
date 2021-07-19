@@ -93,6 +93,23 @@
                                                         </div>
                                                     </div>
 
+                                                     
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="kindle">Book Kindle Asin</label>
+                                                                <input type="text" id="kindleAsin" class="form-control" value="<?= $book_kindle_asin; ?>" name="bookKindleAsin">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="paperback">Book Paperback Asin</label>
+                                                                <input type="text" id="paperbackAsin" class="form-control" value="<?= $book_paperback_asin; ?>" name="bookPaperbackAsin">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                     <div class="row">
 
                                                         <div class="col-md-12">
@@ -106,13 +123,13 @@
 
                                                     <div class="form-group">
                                                         <label>Select Book Image</label>
-                                                        <input type="file" class="form-control-file" id="" name="bookImage" required>
+                                                        <input type="file" value="<?= $book_image; ?>" class="form-control-file" id="" name="bookImage" required>
                                                         <label>Current Image: <b><i><?= $book_image; ?></i></b></label>
                                                     </div>
 
                                                     <div class="form-group">
                                                         <label for="projectinput8">Book Description</label>
-                                                        <textarea id="" rows="5" class="form-control" name="bookDescription"><?= $book_description; ?></textarea>
+                                                        <textarea id="summernote" rows="5" class="form-control" name="bookDescription"><?= $book_description; ?></textarea>
                                                     </div>
                                                 </div>
 
@@ -134,6 +151,23 @@
 
         </div>
     </div>
+
+    <script>
+      $('#summernote').summernote({
+        placeholder: 'Hello stand alone ui',
+        tabsize: 2,
+        height: 120,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+      });
+    </script>
 
     <script src="polling/js/edit_book.js"></script>
 <?php require_once "includes/templates/footer.php"; ?>

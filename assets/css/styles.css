@@ -673,7 +673,8 @@ h6 {
   grid-auto-rows: max-content;
 }
 
-p, body {
+p,
+body {
   text-rendering: geometricPrecision;
   color: #444444;
   margin: 0;
@@ -1548,8 +1549,7 @@ body.sidebar-opened .copyright {
   place-self: center;
 }
 
-#footer ≈
-#social {
+#footer ≈ #social {
   -ms-grid-column-align: end;
       justify-self: end;
   display: -ms-grid;
@@ -1561,55 +1561,46 @@ body.sidebar-opened .copyright {
           align-items: center;
 }
 
-#footer ≈
-#social p {
+#footer ≈ #social p {
   line-height: 20px;
   font-weight: 400;
   font-size: 13px;
   opacity: 0.7;
 }
 
-#footer ≈
-#social p:first-child {
+#footer ≈ #social p:first-child {
   padding-right: 15px;
 }
 
-#footer ≈
-#social span {
+#footer ≈ #social span {
   width: 25px;
   height: 1px;
   background-color: #444444;
   opacity: 0.6;
 }
 
-#footer ≈
-#social span:first-child {
+#footer ≈ #social span:first-child {
   padding-right: 15px;
 }
 
-#footer ≈
-#social a {
+#footer ≈ #social a {
   padding: 15px;
   opacity: 0.6;
 }
 
-#footer ≈
-#social a:hover {
+#footer ≈ #social a:hover {
   opacity: 1;
 }
 
-#footer ≈
-#social svg {
+#footer ≈ #social svg {
   height: 20px;
 }
 
-#footer ≈
-#social img {
+#footer ≈ #social img {
   height: 20px;
 }
 
-#footer ≈
-#social ul {
+#footer ≈ #social ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto auto auto;
@@ -1620,8 +1611,7 @@ body.sidebar-opened .copyright {
       align-items: center;
 }
 
-#footer ≈
-#social ul li {
+#footer ≈ #social ul li {
   line-height: 0;
 }
 
@@ -2456,8 +2446,9 @@ body.sidebar-opened .copyright {
   }
   #book-details .book-title {
     text-align: center !important;
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 35px !important;
+    line-height: 1.1em !important;
+    padding-bottom: 10px !important;
   }
   #book-details .title {
     text-align: left !important;
@@ -2616,7 +2607,8 @@ body.sidebar-opened .copyright {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#book-details .details .description .expand-description .svg, #book-details .details .description .expand-description img {
+#book-details .details .description .expand-description .svg,
+#book-details .details .description .expand-description img {
   height: 12px;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
@@ -3502,14 +3494,16 @@ body.sidebar-opened .copyright {
   margin: 0 auto;
 }
 
-#about-hero .text img, #about-hero .text svg {
+#about-hero .text img,
+#about-hero .text svg {
   width: 100px;
   height: auto;
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-#about-hero .text img line, #about-hero .text svg line {
+#about-hero .text img line,
+#about-hero .text svg line {
   stroke: #FFD2BA;
   opacity: 1;
 }
@@ -3567,14 +3561,16 @@ body.sidebar-opened .copyright {
   justify-items: center;
 }
 
-#contact-hero .text img, #contact-hero .text svg {
+#contact-hero .text img,
+#contact-hero .text svg {
   width: 100px;
   height: auto;
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-#contact-hero .text img line, #contact-hero .text svg line {
+#contact-hero .text img line,
+#contact-hero .text svg line {
   stroke: #FFD2BA;
   opacity: 1;
 }
@@ -4652,7 +4648,8 @@ body.container.donate {
   border-radius: 5px;
 }
 
-#donation-offline .methods .method img, #donation-offline .methods .method svg {
+#donation-offline .methods .method img,
+#donation-offline .methods .method svg {
   height: 40px;
   width: auto;
 }

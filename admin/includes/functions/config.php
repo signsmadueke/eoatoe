@@ -8,7 +8,7 @@ session_start();
 
 define("HOST", "localhost");
 define("USER", "root");
-define("PASSWORD", "");
+define("PASSWORD", "root");
 define("DBNAME", "eoatoe");
 
 $link = mysqli_connect(HOST, USER, PASSWORD, DBNAME);

@@ -58,5 +58,5 @@
 
         </div>
     </div>
-<!-- <script src="polling/js/all_books.js"></script> -->
+<script src="polling/js/all_books.js"></script>
 <?php require_once "includes/templates/footer.php"; ?>

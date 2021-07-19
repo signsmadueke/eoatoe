@@ -84,7 +84,7 @@ blockUrlHackers();
 
                                     <div class="form-group">
                                         <label for="body">Devotional Message</label>
-                                        <textarea id="body" rows="5" class="form-control" name="devBody"></textarea>
+                                        <textarea id="summernote" rows="5" class="form-control" name="devBody"></textarea>
                                     </div>
                                 </div>
 

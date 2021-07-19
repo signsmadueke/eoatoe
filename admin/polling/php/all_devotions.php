@@ -3,7 +3,7 @@
 require_once "../../includes/functions/config.php";
 blockUrlHackers();
 
-$result = fetchAll("devotions", "devotion_id", 0, 9);
+$result = fetchAll("devotions", "devotion_id");
 
 if ($result) {
     $devotions = $result;
@@ -24,15 +24,12 @@ if ($result) {
 
                                     <div class="col-md-6 col-lg-4">
                                         <figure class="effect-winston">
-                                            <img src="devotion_images/<?= $devotion_image; ?>" width="100%" alt="img06">
-                                            <figcaption>
-                                                <p>
-
-                                                    <a href="edit_devotion?devotion_id=<?= $devotion_id; ?>"><i class="fa fa-fw fa-edit"></i></a>
-                                                    <a class="text-danger" data-id="<?= $devotion_id; ?>" onclick="delete_devotion(this)"><i class="fa fa-fw fa-trash-o"></i></a>
-                                                </p>
-                                            </figcaption>
+                                            <img src="../assets/images/devotionals/<?= $devotion_image; ?>" width="100%" alt="img06">
                                         </figure>
+                                        <p>
+                                            <a href="edit_devotion?devotion_id=<?= $devotion_id; ?>"><h5><i class="fa fa-fw fa-edit"></i> Edit</h5></a>
+                                            <a class="text-danger" data-id="<?= $devotion_id; ?>" onclick="delete_devotion(this)"><h5><i class="fa fa-fw fa-trash-o"></i> Delete</h5></a>
+                                        </p>
                                         <h5 class="text-center text-light rounded p-1" style="width: 95%; background: linear-gradient(to right, saddlebrown, firebrick);"><b><?= $devotion_title; ?></b></h5>
                                     </div>
 
