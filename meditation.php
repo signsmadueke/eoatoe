@@ -4,6 +4,8 @@
     if (isset($_GET['meditation'])) {
         $meditationTitle = $_GET['meditation'];
         $meditation_link = ucwords(str_replace("-", " ", $meditationTitle));
+        
+        $meditation_link = str_replace("'", "</b>", $meditation_link);
 
         $result = whereQuote("meditations", "meditation_title", "$meditation_link");
         if ($result) {

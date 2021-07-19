@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     animate.init();
 
-    $("#navigation .menu").click(function (openSidebar) {
+    $("#navigation .menu").on('click', function (openSidebar) {
         var $body = $('body');
         var $sidebar = $('#sidebar');
         var $menu = $('#navigation .menu');

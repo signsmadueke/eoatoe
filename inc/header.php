@@ -175,6 +175,6 @@
     <div id="sidebar-space"></div>
     <div id="sidebar-space"></div>
 
-    <p class="copyright">© 2020 Emmanuel Atoe. All rights reserved.</p>
+    <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Emmanuel Atoe. All rights reserved.</p>
 
 </section>

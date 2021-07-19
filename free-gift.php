@@ -327,7 +327,7 @@
 
 
 <footer id="footer" class="container" style="padding: 30px; grid-template-columns: 1fr 1fr;">
-    <p class="copyright">&copy; 2020 Emmanuel Atoe. All rights reserved.</p>
+    <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Emmanuel Atoe. All rights reserved.</p>
     <div id="social">
         <p>Connect with me</p>
         <span></span>

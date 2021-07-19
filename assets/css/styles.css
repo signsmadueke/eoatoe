@@ -1963,8 +1963,8 @@ body.sidebar-opened .copyright {
 }
 
 #all-books .section-title {
-  font-size: 45px;
-  line-height: 45px;
+  font-size: 40px;
+  line-height: 1.1em;
   font-family: 'Atoe Domaine';
 }
 
@@ -3787,6 +3787,14 @@ body.sidebar-opened .copyright {
   border-radius: 10px;
 }
 
+@media (max-width: 576px) {
+  .devotional {
+    padding: 45px 30px;
+    background: rgba(10, 26, 78, 0.05);
+    border-radius: 5px;
+  }
+}
+
 .devotional .image {
   width: 100%;
   height: auto;
@@ -3897,7 +3905,7 @@ body.sidebar-opened .copyright {
   padding: 5px 0px !important;
   grid-gap: 7px !important;
   border: none !important;
-  border-bottom: 1px dashed rgba(68, 68, 68, 0.5) !important;
+  border-bottom: 1px dashed rgba(68, 68, 68, 0.3) !important;
   background-color: transparent !important;
   width: -webkit-max-content !important;
   width: -moz-max-content !important;
@@ -3969,6 +3977,13 @@ body.sidebar-opened .copyright {
   grid-auto-flow: row;
   grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
+  padding: 100px 30px;
+  background: linear-gradient(45deg, #ffefc3, #ffd2ba);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  justify-self: center;
+  text-align: center;
 }
 
 #devotional-details .devotional-name {

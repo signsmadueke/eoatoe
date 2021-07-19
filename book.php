@@ -1,28 +1,29 @@
 <?php
-require_once "admin/includes/functions/config.php";
-if (isset($_GET['book'])) {
-    $bookName = $_GET['book'];
-    $book_link = ucwords(str_replace("-", " ", $bookName));
-    // $book_link = str_replace("</b>", "'", $book_link);
-    $book_link = str_replace("'", "</b>", $book_link);
+    require_once "admin/includes/functions/config.php";
 
-    $result = whereQuote("books", "book_title", "$book_link");
-    if ($result) {
-        $books = $result;
-    }
+    if (isset($_GET['book'])) {
+        $bookName = $_GET['book'];
+        $book_link = ucwords(str_replace("-", " ", $bookName));
+        // $book_link = str_replace("</b>", "'", $book_link);
+        $book_link = str_replace("'", "</b>", $book_link);
 
-    $response = getOtherBooksAsc("books", "book_title", $book_link, "book_id", 1);
-    if ($response) {
-        $otherbooks = $response;
+        $result = whereQuote("books", "book_title", "$book_link");
+        if ($result) {
+            $books = $result;
+        }
+
+        $response = getOtherBooksAsc("books", "book_title", $book_link, "book_id", 1);
+        if ($response) {
+            $otherbooks = $response;
+        }
+    
+        $response2 = getOtherBooksDesc("books", "book_title", $book_link, "book_id", 1);
+        if ($response2) {
+            $otherbooksDesc = $response2;
+        }
+    } else {
+        redirect_to("books");
     }
- 
-    $response2 = getOtherBooksDesc("books", "book_title", $book_link, "book_id", 1);
-    if ($response2) {
-        $otherbooksDesc = $response2;
-    }
-} else {
-    redirect_to("books");
-}
 
     foreach ($books as $description_text) {
         $page_description = str_replace("</b>", "'", $description_text['book_description']);
