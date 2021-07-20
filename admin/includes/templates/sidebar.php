@@ -17,11 +17,29 @@
                    			 </ul>
                 </li>
 
-                <li class="has-sub nav-item"><a href="#"><i class="icon-notebook"></i><span data-i18n="" class="menu-title">Devotionals</span></a>
+                <li class="has-sub nav-item"><a href="#"><i class="icon-notebook"></i><span data-i18n="" class="menu-title">Meditations</span></a>
                     <ul class="menu-content" style="">
-                        <li class=""><a href="devotionals" class="menu-item">All Devotionals</a>
+                        <li class=""><a href="meditations" class="menu-item">All Meditations</a>
                         </li>
-                        <li class=""><a href="add_devotions" class="menu-item">Add Devotion</a>
+                        <li class=""><a href="add_meditations" class="menu-item">Add Meditation</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="has-sub nav-item"><a href="#"><i class="icon-notebook"></i><span data-i18n="" class="menu-title">Prayers</span></a>
+                    <ul class="menu-content" style="">
+                        <li class=""><a href="prayers" class="menu-item">All Prayers</a>
+                        </li>
+                        <li class=""><a href="add_prayers" class="menu-item">Add Prayer</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="has-sub nav-item"><a href="#"><i class="icon-notebook"></i><span data-i18n="" class="menu-title">Counselling</span></a>
+                    <ul class="menu-content" style="">
+                        <li class=""><a href="counselling" class="menu-item">All Counselling</a>
+                        </li>
+                        <li class=""><a href="add_counselling" class="menu-item">Add Counsel</a>
                         </li>
                     </ul>
                 </li>

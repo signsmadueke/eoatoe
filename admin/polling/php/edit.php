@@ -29,6 +29,45 @@ if (isset($_GET['devotion_id'])) {
     }
 }
 
+if (isset($_GET['meditation_id'])) {
+    $meditation_id = $_GET['meditation_id'];
+
+    $result = editMeditation($_POST, $meditation_id);
+
+    if ($result === true) {
+        echo "true";
+    } else {
+        $errors = $result;
+        echo json_encode($errors);
+    }
+}
+
+if (isset($_GET['prayer_id'])) {
+    $prayer_id = $_GET['prayer_id'];
+
+    $result = editPrayer($_POST, $prayer_id);
+
+    if ($result === true) {
+        echo "true";
+    } else {
+        $errors = $result;
+        echo json_encode($errors);
+    }
+}
+
+if (isset($_GET['counsel_id'])) {
+    $counsel_id = $_GET['counsel_id'];
+
+    $result = editCounsel($_POST, $counsel_id);
+
+    if ($result === true) {
+        echo "true";
+    } else {
+        $errors = $result;
+        echo json_encode($errors);
+    }
+}
+
 if (isset($_GET['freebook_id'])) {
     $freebook_id = $_GET['freebook_id'];
 

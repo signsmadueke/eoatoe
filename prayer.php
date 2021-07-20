@@ -4,6 +4,8 @@
     if (isset($_GET['prayer'])) {
         $prayerTitle = $_GET['prayer'];
         $prayer_link = ucwords(str_replace("-", " ", $prayerTitle));
+        
+        $prayer_link = str_replace("'", "</b>", $prayer_link);
 
         $result = whereQuote("prayers", "prayer_title", "$prayer_link");
         if ($result) {
@@ -23,7 +25,7 @@
             $otherprayersDesc = $response2;
         }
     } else {
-        redirect_to("devotionals");
+        redirect_to("prayers");
     }
 
     foreach ($prayers as $description_text) {
@@ -53,17 +55,7 @@
             $prayer_title = str_replace("</b>", "'", $prayer_title);
             $prayer_subtitle = str_replace("</b>", "'", $prayer_subtitle);
             $prayer_body = str_replace("</b>", "'", $prayer_body); ?>
-
-                <section id="devotional-header" class="desktop">
-                    <img src="assets/images/devotionals/<?= $prayer_subimage; ?>" alt="<?= $prayer_title; ?>">
-                    <img class="shadow" src="assets/images/devotionals/<?= $prayer_subimage; ?>">
-                </section>
-
-                <section id="devotional-header" class="mobile">
-                    <img src="assets/images/devotionals/<?= $prayer_image; ?>" alt="<?= $prayer_title; ?>">
-                    <img class="shadow" src="assets/images/devotionals/<?= $prayer_image; ?>">
-                </section>
-
+            
                 <section id="devotional-details">
                     <h1 class="devotional-name"><?= $prayer_title; ?></h1>
                     <div class="devotional-author">

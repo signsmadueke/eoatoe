@@ -358,6 +358,267 @@ function editDevotion($post, $id) {
     return $errors;
 }
 
+function AddMeditation($post) {
+    extract($post);
+    $errors = [];
+
+    if (!empty($meditationTitle)) {
+        $tmp_title = sanitize($meditationTitle);
+        if (!check_duplicate("meditations", "meditation_title", $tmp_title)) {
+            $title = $tmp_title;
+            $title = str_replace("'", "</b>", $title);
+        } else {
+            $errors[] = "This meditation already exists" . "<br>";
+        }
+    } else {
+        $errors[] = "Meditation Title is empty" . "<br>";
+    }
+
+    if (!empty($meditationAuthor)) {
+        $author = sanitize($meditationAuthor);
+    } else {
+        $errors[] = "Meditation Author is empty" . "<br>";
+    }
+
+    if (!empty($meditationBody)) {
+        $body = $meditationBody;
+        $body = str_replace("'", "</b>", $body);
+
+    } else {
+        $errors[] = "Meditation Message is empty" . "<br>";
+    }
+
+    $datePosted = date("Y-m-d");
+
+    if (!$errors) {
+        $sql = "INSERT INTO meditations (meditation_title, meditation_author, meditation_body, datePosted) VALUES ('$title', '$author', '$body', '$datePosted')";
+
+        $result = validateQuery($sql);
+        if ($result) {
+            return true;
+        } else {
+            $errors[] = "Operation Failed! Try Again" . "<br>";
+        }
+    } else {
+        return $errors;
+    }
+}
+
+function editMeditation($post, $id) {
+    extract($post);
+    $errors = [];
+
+    if (!empty($meditationTitle)) {
+        $title = sanitize($meditationTitle);
+    } else {
+        $errors[] = "Meditation Title is empty" . "<br>";
+    }
+
+    $title = str_replace("'", "</b>", $title);
+
+    if (!empty($meditationAuthor)) {
+        $author = sanitize($meditationAuthor);
+    } else {
+        $errors[] = "Meditation Author is empty" . "<br>";
+    }
+
+    if (!empty($meditationBody)) {
+        $body = sanitize($meditationBody);
+    } else {
+        $errors[] = "Meditation Message is empty" . "<br>";
+    }
+
+    // $body = str_replace("'", "</b>", $title);
+
+    $datePosted = date("Y-m-d");
+
+    if (!$errors) {
+        $sql = "UPDATE meditations SET meditation_title = '$title', meditation_author = '$author', meditation_body = '$body', datePosted = '$datePosted' WHERE meditation_id = $id";
+        $result = validateQuery($sql);
+
+        if ($result) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    return $errors;
+}
+
+function AddCounsel($post) {
+    extract($post);
+    $errors = [];
+
+    if (!empty($counselTitle)) {
+        $tmp_title = sanitize($counselTitle);
+        if (!check_duplicate("counselling", "counsel_title", $tmp_title)) {
+            $title = $tmp_title;
+            $title = str_replace("'", "</b>", $title);
+        } else {
+            $errors[] = "This counsel already exists" . "<br>";
+        }
+    } else {
+        $errors[] = "Counsel Title is empty" . "<br>";
+    }
+
+    if (!empty($counselAuthor)) {
+        $author = sanitize($counselAuthor);
+    } else {
+        $errors[] = "Counsel Author is empty" . "<br>";
+    }
+
+    if (!empty($counselBody)) {
+        $body = $counselBody;
+        $body = str_replace("'", "</b>", $body);
+
+    } else {
+        $errors[] = "Counsel Message is empty" . "<br>";
+    }
+
+    $datePosted = date("Y-m-d");
+
+    if (!$errors) {
+        $sql = "INSERT INTO counselling (counsel_title, counsel_author, counsel_body, datePosted) VALUES ('$title', '$author', '$body', '$datePosted')";
+
+        $result = validateQuery($sql);
+        if ($result) {
+            return true;
+        } else {
+            $errors[] = "Operation Failed! Try Again" . "<br>";
+        }
+    } else {
+        return $errors;
+    }
+}
+
+function editCounsel($post, $id) {
+    extract($post);
+    $errors = [];
+
+    if (!empty($counselTitle)) {
+        $title = sanitize($counselTitle);
+    } else {
+        $errors[] = "Counsel Title is empty" . "<br>";
+    }
+
+    $title = str_replace("'", "</b>", $title);
+
+    if (!empty($counselAuthor)) {
+        $author = sanitize($counselAuthor);
+    } else {
+        $errors[] = "Counsel Author is empty" . "<br>";
+    }
+
+    if (!empty($counselBody)) {
+        $body = sanitize($counselBody);
+    } else {
+        $errors[] = "Counsel Message is empty" . "<br>";
+    }
+
+    // $body = str_replace("'", "</b>", $title);
+
+    $datePosted = date("Y-m-d");
+
+    if (!$errors) {
+        $sql = "UPDATE counselling SET counsel_title = '$title', counsel_author = '$author', counsel_body = '$body', datePosted = '$datePosted' WHERE counsel_id = $id";
+        $result = validateQuery($sql);
+
+        if ($result) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    return $errors;
+}
+
+function AddPrayer($post) {
+    extract($post);
+    $errors = [];
+
+    if (!empty($prayerTitle)) {
+        $tmp_title = sanitize($prayerTitle);
+        if (!check_duplicate("prayers", "prayer_title", $tmp_title)) {
+            $title = $tmp_title;
+            $title = str_replace("'", "</b>", $title);
+        } else {
+            $errors[] = "This prayer already exists" . "<br>";
+        }
+    } else {
+        $errors[] = "Prayer Title is empty" . "<br>";
+    }
+
+    if (!empty($prayerAuthor)) {
+        $author = sanitize($prayerAuthor);
+    } else {
+        $errors[] = "Prayer Author is empty" . "<br>";
+    }
+
+    if (!empty($prayerBody)) {
+        $body = $prayerBody;
+        $body = str_replace("'", "</b>", $body);
+
+    } else {
+        $errors[] = "Prayer Message is empty" . "<br>";
+    }
+
+    $datePosted = date("Y-m-d");
+
+    if (!$errors) {
+        $sql = "INSERT INTO prayers (prayer_title, prayer_author, prayer_body, datePosted) VALUES ('$title', '$author', '$body', '$datePosted')";
+
+        $result = validateQuery($sql);
+        if ($result) {
+            return true;
+        } else {
+            $errors[] = "Operation Failed! Try Again" . "<br>";
+        }
+    } else {
+        return $errors;
+    }
+}
+
+function editPrayer($post, $id) {
+    extract($post);
+    $errors = [];
+
+    if (!empty($prayerTitle)) {
+        $title = sanitize($prayerTitle);
+    } else {
+        $errors[] = "Prayer Title is empty" . "<br>";
+    }
+
+    $title = str_replace("'", "</b>", $title);
+
+    if (!empty($prayerAuthor)) {
+        $author = sanitize($prayerAuthor);
+    } else {
+        $errors[] = "Prayer Author is empty" . "<br>";
+    }
+
+    if (!empty($prayerBody)) {
+        $body = sanitize($prayerBody);
+    } else {
+        $errors[] = "Prayer Message is empty" . "<br>";
+    }
+
+    // $body = str_replace("'", "</b>", $title);
+
+    $datePosted = date("Y-m-d");
+
+    if (!$errors) {
+        $sql = "UPDATE prayers SET prayer_title = '$title', prayer_author = '$author', prayer_body = '$body', datePosted = '$datePosted' WHERE prayer_id = $id";
+        $result = validateQuery($sql);
+
+        if ($result) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    return $errors;
+}
+
 function AddAdmin($post) {
     extract($post);
     $errors = [];

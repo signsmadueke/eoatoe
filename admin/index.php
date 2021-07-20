@@ -4,6 +4,7 @@
 
     $totalBooks = getTotal("books");
     $totalDevotions = getTotal("devotions");
+    $totalMeditations = getTotal("meditations");
 
     $result = fetchAllDesc("books", "book_id", 0, 3);
     if ($result) {
@@ -13,6 +14,11 @@
     $response = fetchAllDesc("devotions", "devotion_id", 0, 3);
     if ($response) {
         $devotions = $response;
+    }
+
+    $response = fetchAll("meditations", "meditation_id");
+    if ($response) {
+        $meditations = $response;
     }
 
 ?>
@@ -80,15 +86,12 @@
 
 <!--                                    Recent Devotion Uploaded-->
                                     <?php
-                                    if (!empty($devotions)) {
-                                        foreach ($devotions as $recent_devotions) {
-                                            extract($recent_devotions); ?>
+                                    if (!empty($meditations)) {
+                                        foreach ($meditations as $recent_meditations) {
+                                            extract($recent_meditations); ?>
                                             <tr class="animated fadeInUp">
-                                                <td class="text-truncate"><?= $devotion_title?></td>
-                                                <td class="text-truncate"><?= $devotion_author; ?></td>
-                                                <td>
-                                                    <img src="devotion_images/<?= $devotion_image; ?>" class="image-responsive rounded shadow" width="60" alt="">
-                                                </td>
+                                                <td class="text-truncate"><?= $meditation_title?></td>
+                                                <td class="text-truncate"><?= $meditation_author; ?></td>
                                                 <td>
                                                     <?= $datePosted; ?>
                                                 </td>

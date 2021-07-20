@@ -46,3 +46,39 @@ if (isset($_GET['devotion_id'])) {
         echo "false";
     }
 }
+
+
+if (isset($_GET['meditation_id'])) {
+    $delete_id = $_GET['meditation_id'];
+
+    $result = delete("meditations", "meditation_id", $delete_id);
+    if ($result === true) {
+        echo "true";
+    } else {
+        echo "false";
+    }
+}
+
+
+if (isset($_GET['counsel_id'])) {
+    $delete_id = $_GET['counsel_id'];
+
+    $result = delete("counselling", "counsel_id", $delete_id);
+    if ($result === true) {
+        echo "true";
+    } else {
+        echo "false";
+    }
+}
+
+
+if (isset($_GET['prayer_id'])) {
+    $delete_id = $_GET['prayer_id'];
+
+    $result = delete("prayers", "prayer_id", $delete_id);
+    if ($result === true) {
+        echo "true";
+    } else {
+        echo "false";
+    }
+}

@@ -4,6 +4,8 @@
     if (isset($_GET['counsel'])) {
         $counselTitle = $_GET['counsel'];
         $counsel_link = ucwords(str_replace("-", " ", $counselTitle));
+        
+        $counsel_link = str_replace("'", "</b>", $counsel_link);
 
         $result = whereQuote("counselling", "counsel_title", "$counsel_link");
         if ($result) {
@@ -53,17 +55,7 @@
             $counsel_title = str_replace("</b>", "'", $counsel_title);
             $counsel_subtitle = str_replace("</b>", "'", $counsel_subtitle);
             $counsel_body = str_replace("</b>", "'", $counsel_body); ?>
-
-                <section id="devotional-header" class="desktop">
-                    <img src="assets/images/devotionals/<?= $counsel_subimage; ?>" alt="<?= $counsel_title; ?>">
-                    <img class="shadow" src="assets/images/devotionals/<?= $counsel_subimage; ?>">
-                </section>
-
-                <section id="devotional-header" class="mobile">
-                    <img src="assets/images/devotionals/<?= $counsel_image; ?>" alt="<?= $counsel_title; ?>">
-                    <img class="shadow" src="assets/images/devotionals/<?= $counsel_image; ?>">
-                </section>
-
+            
                 <section id="devotional-details">
                     <h1 class="devotional-name"><?= $counsel_title; ?></h1>
                     <div class="devotional-author">
@@ -77,7 +69,6 @@
                 </section>
 
 <?php } } ?>
-
 
 <?php
     require_once 'inc/footer.php';

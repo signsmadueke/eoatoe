@@ -7,7 +7,7 @@
     <meta name="description" content="Emmanuel Atoe">
     <meta name="keywords" content="Emmanuel Atoe, Books">
     <meta name="author" content="WorldBrainTechnology">
-    <title>Prayer Admin</title>
+    <title>Emmanuel Atoe's Admin</title>
     <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/madueke/icon.png">
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/madueke/icon.png">
     <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/madueke/icon.png">
