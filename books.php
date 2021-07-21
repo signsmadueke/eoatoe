@@ -12,6 +12,7 @@
     }
 
 
+    $page_name = "Books";
     $title = 'Books — Emmanuel Atoe';
     $tagline = "Christian Counsellor & Author";
     $page_description = 'A leading christian author, speaker, and expert on spiritual warfare and deliverance. His 100+ books cover every area of successful christian living.';
