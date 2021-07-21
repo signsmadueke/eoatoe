@@ -14,7 +14,7 @@
 
         let form_inputs = new FormData(e.currentTarget);
 
-        fetch(`polling/php/add_counselling`, {
+        fetch(`polling/php/add_counsel`, {
             method: "post",
             body: form_inputs
         }).then(d => d).then(d => d.text()).then(d => {
