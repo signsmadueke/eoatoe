@@ -820,7 +820,6 @@ function editFreeBook($post, $id) {
 }
 
 
-
 function AddNewBook($post) {
     extract($post);
     $errors = [];
@@ -912,6 +911,109 @@ function editNewBook($post, $id) {
 
     if (!$errors) {
         $sql = "UPDATE newbooks SET book_title = '$title', book_author = '$author', book_image = '$image', book_description = '$description', date_added = '$date' WHERE book_id = $id";
+        $result = validateQuery($sql);
+
+        if ($result) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    return $errors;
+}
+
+
+function AddProgressBook($post) {
+    extract($post);
+    $errors = [];
+
+    if (!empty($bookTitle)) {
+        $tmp_title = sanitize($bookTitle);
+        if (!check_duplicate("books", "book_title", $tmp_title)) {
+            $tmp_title2 = $tmp_title;
+            $title = str_replace("'", "</b>", $tmp_title2);
+        } else {
+            $errors[] = "This book already exists" . "<br>";
+        }
+    } else {
+        $errors[] = "Book Title is empty" . "<br>";
+    }
+
+    if (!empty($bookAuthor)) {
+        $author = sanitize($bookAuthor);
+    } else {
+        $errors[] = "Book Author is empty" . "<br>";
+    }
+
+    if (isset($_FILES['bookImage'])) {
+        $image = sanitize($_FILES['bookImage']['name']);
+        $tmp_image = $_FILES['bookImage']['tmp_name'];
+        move_uploaded_file($tmp_image, "../../../assets/images/books/$image");
+    } else {
+        $errors[] = "Book Image is empty" . "<br>";
+    }
+
+    if (!empty($bookDescription)) {
+        $tmp_description = sanitize_body($bookDescription);
+        $description = str_replace("'", "</b>", $tmp_description);
+    } else {
+        $errors[] = "Book Description is empty" . "<br>";
+    }
+
+
+    $dateAdded = date("Y-m-d");
+
+    if (!$errors) {
+        $sql = "INSERT INTO progressbooks (book_title, book_author, book_image, book_description, date_added) VALUES ('$title', '$author', '$image', '$description', '$dateAdded')";
+
+        $result = validateQuery($sql);
+        if ($result) {
+            return true;
+        } else {
+            $errors[] = "Operation Failed! Try Again" . "<br>";
+        }
+    } else {
+        return $errors;
+    }
+}
+
+
+function editProgressBook($post, $id) {
+    extract($post);
+    $errors = [];
+
+    if (!empty($bookTitle)) {
+        $title = sanitize($bookTitle);
+        $title = str_replace("'", "</b>", $title);
+    } else {
+        $errors[] = "Book Title is empty" . "<br>";
+    }
+
+    if (!empty($bookAuthor)) {
+        $author = sanitize($bookAuthor);
+    } else {
+        $errors[] = "Book Author is empty" . "<br>";
+    }
+
+    if (isset($_FILES['bookImage'])) {
+        $image = sanitize($_FILES['bookImage']['name']);
+        $tmp_image = $_FILES['bookImage']['tmp_name'];
+        move_uploaded_file($tmp_image, "../../../assets/images/books/$image");
+    } else {
+        $errors[] = "Book Image is empty" . "<br>";
+    }
+
+    if (!empty($bookDescription)) {
+        $description = sanitize_body($bookDescription);
+        $description = str_replace("'", "</b>", $description);
+    } else {
+        $errors[] = "Book Description is empty" . "<br>";
+    }
+
+    $date = date("Y-m-d");
+
+    if (!$errors) {
+        $sql = "UPDATE progressbooks SET book_title = '$title', book_author = '$author', book_image = '$image', book_description = '$description', date_added = '$date' WHERE book_id = $id";
         $result = validateQuery($sql);
 
         if ($result) {

@@ -93,3 +93,16 @@ if (isset($_GET['newbook_id'])) {
         echo json_encode($errors);
     }
 }
+
+if (isset($_GET['progressbook_id'])) {
+    $progressbook_id = $_GET['progressbook_id'];
+
+    $result = editProgressBook($_POST, $progressbook_id);
+
+    if ($result === true) {
+        echo "true";
+    } else {
+        $errors = $result;
+        echo json_encode($errors);
+    }
+}

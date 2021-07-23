@@ -36,6 +36,17 @@ if (isset($_GET['newbook_id'])) {
     }
 }
 
+if (isset($_GET['progressbook_id'])) {
+    $delete_id = $_GET['progressbook_id'];
+
+    $result = delete("progressbooks", "progressbook_id", $delete_id);
+    if ($result === true) {
+        echo "true";
+    } else {
+        echo "false";
+    }
+}
+
 if (isset($_GET['devotion_id'])) {
     $delete_id = $_GET['devotion_id'];
 

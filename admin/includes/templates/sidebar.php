@@ -14,6 +14,8 @@
                         <li class=""><a href="add_books" class="menu-item">Add Book</a></li>
                         <li class=""><a href="all_new_book" class="menu-item">All New Book</a></li>
                         <li class=""><a href="add_new_book" class="menu-item">Add New Book</a></li>
+                        <li class=""><a href="all_progress_book" class="menu-item">All Books in Progress</a></li>
+                        <li class=""><a href="add_progress_book" class="menu-item">Add Book in Progress</a></li>
                    			 </ul>
                 </li>
 
