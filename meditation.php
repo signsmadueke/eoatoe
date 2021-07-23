@@ -32,7 +32,7 @@
         $page_description = str_replace("</b>", "'", $description_text['meditation_body']);
         $page_description = trim(preg_replace('/\s+/', ' ', $page_description));
         $page_description = strip_tags($page_description);
-        $page_description = substr($page_description, 0, 1000) . "...";
+        $page_description = substr($page_description, 0, 300) . "...";
     }
 
     foreach ($meditations as $image) {
@@ -41,7 +41,7 @@
 
 
     $page_name = "Meditations";
-    $title = $meditation_link;
+    $title = $meditation_link . " — Emmanuel Atoe";
     $tagline = "Christian Counsellor & Author";
     $extraBodyClasses = '';
     require_once 'inc/header.php';

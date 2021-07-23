@@ -29,7 +29,7 @@
         $page_description = str_replace("</b>", "'", $description_text['book_description']);
         $page_description = trim(preg_replace('/\s+/', ' ', $page_description));
         $page_description = strip_tags($page_description);
-        $page_description = substr($page_description, 0, 1000) . "...";
+        $page_description = substr($page_description, 0, 300) . "...";
     }
 
     foreach ($books as $image) {
@@ -37,7 +37,7 @@
     }
 
     $page_name = "Books";
-    $title = $book_link;
+    $title = $book_link . " — Emmanuel Atoe";
     $tagline = "Christian Counsellor & Author";
 $extraBodyClasses = '';
 require_once 'inc/header.php';

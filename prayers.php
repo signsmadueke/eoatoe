@@ -8,7 +8,7 @@
 
 
     $page_name = "Prayers";
-    $title = 'Prayers';
+    $title = 'Prayers — Emmanuel Atoe';
     $tagline = "Christian Counsellor & Author";
     $page_description = 'Prayers by Emmanuel Atoe, Christian Counsellor & Author.';
     $page_image = "eoatoe/eoatoe.jpg";
