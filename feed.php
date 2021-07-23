@@ -1,7 +1,7 @@
 <?php
     require_once "admin/includes/functions/config.php";
 
-    $response = fetchAll("devotions", "devotion_id", 0, 15);
+    $response = fetchAll("meditations", "meditation_id");
     if ($response) {
         $items = $response;
     } else {
@@ -13,12 +13,12 @@
     * In a real scenario it should be loaded from a database.
     */
     $channel = array("title"        => "Emmanuel Atoe",
-                     "description"  => "Emmanuel Atoe, Christian Author of over 100 books on Amazon.",
+                     "description"  => "Emmanuel Atoe, Christian Counsellor & Author.",
                      "link"         => "https://www.madueke.com",
                      "copyright"    => "Copyright (C) 2020 Emmanuel Atoe. All rights reserved.");
     
     // $items = array(
-    //     array("title"       => "$devotion_title",
+    //     array("title"       => "$meditation_title",
     //           "description" => "This is the description of the first example.",
     //           "link"        => "https://www.example.com/example1.html",
     //           "pubDate"     => date("D, d M Y H:i:s O", mktime(22, 10, 0, 12, 29, 2008)))
@@ -33,18 +33,18 @@
     $output .= "<copyright>" . $channel["copyright"] . "</copyright>";
     
     foreach ($items as $item) {
-        $devotion_link = strtolower((str_replace(" ", "-", $item['devotion_title'])));
-        $devotion_body = str_replace("</b>", "'", $item["devotion_body"]);
-        $devotion_body = trim(preg_replace('/\s+/', ' ', $devotion_body));
-        $devotion_body = strip_tags(utf8_encode(stripslashes($devotion_body)));
-        $devotion_body = substr($devotion_body, 0, 1000) . "...";
+        $meditation_link = strtolower((str_replace(" ", "-", $item['meditation_title'])));
+        $meditation_body = str_replace("</b>", "'", $item["meditation_body"]);
+        $meditation_body = trim(preg_replace('/\s+/', ' ', $meditation_body));
+        $meditation_body = strip_tags(utf8_encode(stripslashes($meditation_body)));
+        $meditation_body = substr($meditation_body, 0, 1000) . "...";
         $source = $item['datePosted'];
         $date = new DateTime($source);
         
         $output .= "<item>";
-        $output .= "<title>" . $item["devotion_title"] . "</title>";
-        $output .= "<description>" . $devotion_body . "</description>";
-        $output .= "<link>" . "https://www.madueke.com/devotional?devotion=$devotion_link" . "</link>";
+        $output .= "<title>" . $item["meditation_title"] . "</title>";
+        $output .= "<description>" . $meditation_body . "</description>";
+        $output .= "<link>" . "https://www.madueke.com/meditational?meditation=$meditation_link" . "</link>";
         $output .= "<pubDate>" . date("D, d M Y H:i:s T", strtotime($item['datePosted'])) . "</pubDate>";
         $output .= "</item>";
     }

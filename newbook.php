@@ -36,7 +36,7 @@ if (isset($_GET['book'])) {
     }
 
 $title = $book_link;
-$tagline = "Emmanuel Atoe, Christian Author of over 100 books on Amazon";
+$tagline = "Emmanuel Atoe, Christian Counsellor & Author";
 $extraBodyClasses = '';
 require_once 'inc/header.php';
 ?>

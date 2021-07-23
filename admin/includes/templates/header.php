@@ -8,12 +8,9 @@
     <meta name="keywords" content="Emmanuel Atoe, Books">
     <meta name="author" content="WorldBrainTechnology">
     <title>Emmanuel Atoe's Admin</title>
-    <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/madueke/icon.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/madueke/icon.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/madueke/icon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/madueke/icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/madueke/icon.png">
-    <link rel="shortcut icon" type="image/png" href="../assets/images/madueke/icon.png">
+    <link rel="icon" href="../favicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon.png" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">

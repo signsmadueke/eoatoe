@@ -8,9 +8,9 @@
 
 
     $page_name = "Meditations";
-    $title = 'Meditations — Emmanuel Atoe';
+    $title = 'Meditations';
     $tagline = "Christian Counsellor & Author";
-    $page_description = 'Meditations, Prayers & Prophetic Declarations by Emmanuel Atoe, Christian Counsellor & Author.';
+    $page_description = 'Meditations by Emmanuel Atoe, Christian Counsellor & Author.';
     $page_image = "eoatoe/eoatoe.jpg";
     $extraBodyClasses = '';
     require_once 'inc/header.php';

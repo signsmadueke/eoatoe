@@ -8,9 +8,9 @@
 
 
     $page_name = "Prayers";
-    $title = 'Prayers — Emmanuel Atoe';
+    $title = 'Prayers';
     $tagline = "Christian Counsellor & Author";
-    $page_description = 'Prayers, Prayers & Prophetic Declarations by Emmanuel Atoe, Christian Counsellor & Author.';
+    $page_description = 'Prayers by Emmanuel Atoe, Christian Counsellor & Author.';
     $page_image = "eoatoe/eoatoe.jpg";
     $extraBodyClasses = '';
     require_once 'inc/header.php';

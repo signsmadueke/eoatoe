@@ -1,7 +1,7 @@
 <div data-active-color="white" data-background-color="black" data-image="app-assets/img/sidebar-bg/01.jpg" class="app-sidebar">
         <div class="sidebar-header">
           <div class="logo clearfix"><a href="index" class="logo-text float-left">
-              <div class="logo-img"><img src="../assets/images/madueke/icon.png" style="border: 2px solid #fff; border-radius: 20px;" alt="Logo"/></div><span class="text align-middle small">EOATOE</span></a><a id="sidebarClose" href="javascript:;" class="nav-close d-block d-md-block d-lg-none d-xl-none"><i class="ft-circle"></i></a></div>
+              <span class="text align-middle small">EOATOE</span></a><a id="sidebarClose" href="javascript:;" class="nav-close d-block d-md-block d-lg-none d-xl-none"><i class="ft-circle"></i></a></div>
         </div>
         <div class="sidebar-content">
           <div class="nav-container">

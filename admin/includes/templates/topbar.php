@@ -34,7 +34,7 @@
                   </div>
                 </li>
 
-                <li class="dropdown nav-item mr-sm-5 mr-lg-0"><a id="dropdownBasic3" href="#" data-toggle="dropdown" class="nav-link position-relative dropdown-user-link dropdown-toggle"><span class="avatar avatar-online"><img id="navbar-avatar" src="../assets/images/madueke/icon.png" style="border: 2px solid lightgrey;" alt="logo"/></span>
+                <li class="dropdown nav-item mr-sm-5 mr-lg-0"><a id="dropdownBasic3" href="#" data-toggle="dropdown" class="nav-link position-relative dropdown-user-link dropdown-toggle"><span class="avatar avatar-online"></span>
                     <p class="d-none">User Settings</p></a>
                   <div aria-labelledby="dropdownBasic3" class="dropdown-menu dropdown-menu-right">
                     <div class="arrow_box_right">

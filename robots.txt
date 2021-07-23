@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Allow: /sitemap.htm
-Sitemap: https://madueke.com/sitemap.xml
+Sitemap: https://eoatoe.com/sitemap.xml

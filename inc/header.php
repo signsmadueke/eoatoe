@@ -12,25 +12,6 @@
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="<?php echo $title; ?> — Emmanuel Atoe, <?php echo $tagline; ?>">
-    <meta property="og:description" content="<?php echo $page_description; ?>">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="article:publisher" content="https://www.facebook.com/prayermadueke/">
-    <meta property="og:site_name" content="Emmanuel Atoe">
-    <meta property="og:image" content="assets/images/<?= $page_image; ?>">
-
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@prayermadueke">
-    <meta name="twitter:description" content="<?php echo $page_description; ?>">
-    <meta name="twitter:image:alt" content="<?php echo $title; ?> — Emmanuel Atoe, <?php echo $tagline; ?>">
-    <meta name="twitter:creator" content="@prayermadueke">
-    <meta name="twitter:title" content="<?php echo $title; ?> — Emmanuel Atoe, <?php echo $tagline; ?>">
-    <meta name="twitter:image" content="assets/images/<?= $page_image; ?>">
-
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/styles.css"/>
 

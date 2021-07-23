@@ -1,7 +1,7 @@
 <?php
     $title = 'Free Gift';
     $tagline = "Christian Counsellor & Author";
-    $page_description = 'A leading christian author, speaker, and expert on spiritual warfare and deliverance. His 100+ books cover every area of successful christian living.';
+    $page_description = "Dr. (Pastor) Emmanuel O. Atoe's ministry, through the gifts of the Holy Spirit and the grace of God, has enabled him to motivate, inspire and assist many people by prayer, teaching and counselling.";
     $page_image = "eoatoe/eoatoe.jpg";
     $extraBodyClasses = '';
 ?>

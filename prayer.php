@@ -42,7 +42,7 @@
 
     $page_name = "Prayers";
     $title = $prayer_link;
-    $tagline = "Emmanuel Atoe — Christian Counsellor & Author";
+    $tagline = "Christian Counsellor & Author";
     $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>
