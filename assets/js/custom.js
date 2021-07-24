@@ -1,75 +1,27 @@
 "use strict";
 
 $(document).ready(function () {
-    $(".navbar-toggler").click(function () {
-        $(".navbar-toggler").toggleClass("collapsed");
-        $(".main-menu-collapse").toggleClass("show");
-    });
+	$(".harmburger").on('click', function (openSidebar) {
+		var $body = $('body');
+		var $menu = $('.harmburger');
+		$body.toggleClass("sidebar-opened");
+		$menu.toggleClass("collapsed");
+	});
 
-    var animate = new WOW({
-        boxClass: 'animate',
-        animateClass: 'animated',
-        offset: 0,
-        mobile: true,
-        scrollContainer: null,
-        resetAnimation: true,
-    });
-
-    animate.init();
-
-    $("#navigation .menu").on('click', function (openSidebar) {
-        var $body = $('body');
-        var $sidebar = $('#sidebar');
-        var $menu = $('#navigation .menu');
-        $body.toggleClass("sidebar-opened");
-        $menu.toggleClass("collapsed");
-    });
-
-    $(document).keypress(function (e) {
-        var $body = $('body');
-        var $sidebar = $('#sidebar');
-        var $menu = $('#navigation .menu');
-        if (e.keyCode === 27) {
-            $body.toggleClass("sidebar-opened");
-            $menu.toggleClass("collapsed");
-        }
-    });
-    $(".expand-description").click(function () {
-        var $read_more = $('.expand-description span');
-        var $description = $('#book-details .details .description');
-        $description.toggleClass("show");
-        $('.expand-description span').text == 'Read More' ? 'Read Less' : 'Read More';
-    });
-
-    const openEls = document.querySelectorAll("[data-open]");
-    const closeEls = document.querySelectorAll("[data-close]");
-    const isVisible = "is-visible";
-
-    for (const el of openEls) {
-        el.addEventListener("click", function () {
-            const modalId = this.dataset.open;
-            document.getElementById(modalId).classList.add(isVisible);
-        });
-    }
-
-    for (const el of closeEls) {
-        el.addEventListener("click", function () {
-            this.parentElement.parentElement.parentElement.classList.remove(isVisible);
-        });
-    }
-
-    document.addEventListener("click", e => {
-        if (e.target == document.querySelector(".modal.is-visible")) {
-            document.querySelector(".modal.is-visible [data-close]").click();
-        }
-    });
-
-    document.addEventListener("keyup", e => {
-        // if we press the ESC
-        if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
-            document.querySelector(".modal.is-visible [data-close]").click();
-        }
-    });
+	$(document).keypress(function (e) {
+		var $body = $('body');
+		var $menu = $('.harmburger');
+		if (e.keyCode === 27) {
+			$body.toggleClass("sidebar-opened");
+			$menu.toggleClass("collapsed");
+		}
+	});
+	$(".expand-description").click(function () {
+		var $read_more = $('.expand-description span');
+		var $description = $('#book-details .details .description');
+		$description.toggleClass("show");
+		$read_more.text == 'Read More' ? 'Read Less' : 'Read More';
+	});
 });
 
 
@@ -77,18 +29,18 @@ $(document).ready(function () {
 
 window.addEventListener('load', function () {
 
-    var $window = $(window);
-    $window.on('scroll', function () {
-        var $nav = $('#navigation.fixed-nav');
-        var height = $nav.outerHeight();
-        var scrollTop = $window.scrollTop();
-        if (scrollTop > height * 2) {
-            $nav.addClass('show');
-        } else {
-            $nav.removeClass('show');
-        }
+	var $window = $(window);
+	$window.on('scroll', function () {
+		var $nav = $('#navigation.fixed-nav');
+		var height = $nav.outerHeight();
+		var scrollTop = $window.scrollTop();
+		if (scrollTop > height * 2) {
+			$nav.addClass('show');
+		} else {
+			$nav.removeClass('show');
+		}
 
-    });
+	});
 });
 
 
@@ -97,35 +49,35 @@ window.addEventListener('load', function () {
 var pAgree = '1';
 
 jQuery('img.svg').each(function () {
-    var $img = jQuery(this);
-    var imgID = $img.attr('id');
-    var imgClass = $img.attr('class');
-    var imgURL = $img.attr('src');
+	var $img = jQuery(this);
+	var imgID = $img.attr('id');
+	var imgClass = $img.attr('class');
+	var imgURL = $img.attr('src');
 
-    jQuery.get(imgURL, function (data) {
-        // Get the SVG tag, ignore the rest
-        var $svg = jQuery(data).find('svg');
+	jQuery.get(imgURL, function (data) {
+		// Get the SVG tag, ignore the rest
+		var $svg = jQuery(data).find('svg');
 
-        // Add replaced image's ID to the new SVG
-        if (typeof imgID !== 'undefined') {
-            $svg = $svg.attr('id', imgID);
-        }
-        // Add replaced image's classes to the new SVG
-        if (typeof imgClass !== 'undefined') {
-            $svg = $svg.attr('class', imgClass + ' replaced-svg');
-        }
+		// Add replaced image's ID to the new SVG
+		if (typeof imgID !== 'undefined') {
+			$svg = $svg.attr('id', imgID);
+		}
+		// Add replaced image's classes to the new SVG
+		if (typeof imgClass !== 'undefined') {
+			$svg = $svg.attr('class', imgClass + ' replaced-svg');
+		}
 
-        // Remove any invalid XML tags as per http://validator.w3.org
-        $svg = $svg.removeAttr('xmlns:a');
+		// Remove any invalid XML tags as per http://validator.w3.org
+		$svg = $svg.removeAttr('xmlns:a');
 
-        // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
-        if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-            $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-        }
+		// Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+		if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+			$svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+		}
 
-        // Replace image with new SVG
-        $img.replaceWith($svg);
+		// Replace image with new SVG
+		$img.replaceWith($svg);
 
-    }, 'xml');
+	}, 'xml');
 
 });

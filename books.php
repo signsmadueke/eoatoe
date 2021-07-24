@@ -19,7 +19,7 @@
 
     $page_name = "Books";
     $title = 'Books — Emmanuel Atoe';
-    $tagline = "Christian Counsellor & Author";
+    $tagline = "Author and Christian Counsellor";
     $page_description = "Dr. (Pastor) Emmanuel O. Atoe's ministry, through the gifts of the Holy Spirit and the grace of God, has enabled him to motivate, inspire and assist many people by prayer, teaching and counselling.";
     $page_image = "eoatoe/eoatoe.jpg";
     $extraBodyClasses = '';

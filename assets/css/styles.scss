@@ -971,7 +971,7 @@ body.dark {
 		}
 	}
 
-	.menu {
+	.harmburger {
 		.icon-bar {
 			background: white !important;
 		}
@@ -1129,7 +1129,7 @@ body.container {
 		}
 	}
 
-	.menu {
+	.harmburger {
 		display: block;
 	}
 }
@@ -1357,7 +1357,7 @@ body.sidebar-opened {
 	color: #9E4E22;
 }
 
-.menu {
+.harmburger {
 	padding: 6.25px 0px 6.25px 12.5px;
 	// pointer-events: none;
 	display: none;
@@ -1381,7 +1381,7 @@ body.sidebar-opened {
 	}
 }
 
-.menu.collapsed {
+.harmburger.collapsed {
 	.icon-bar {
 		+ {
 			.icon-bar {
@@ -5362,7 +5362,7 @@ body.container.donate {
 
 
 @media (max-width: 1300px) {
-	.menu {
+	.harmburger {
 		display: block !important;
 	}
 

@@ -2,8 +2,8 @@
     <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Emmanuel Atoe. All rights reserved.</p>
 </footer>
 
-<script src="assets/js/popper.js"></script>
-<script src="assets/js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/smooth-scroll.js"></script>
 <script src="assets/js/animations.js"></script>

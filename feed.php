@@ -13,7 +13,7 @@
     * In a real scenario it should be loaded from a database.
     */
     $channel = array("title"        => "Emmanuel Atoe",
-                     "description"  => "Emmanuel Atoe, Christian Counsellor & Author.",
+                     "description"  => "Emmanuel Atoe, Author and Christian Counsellor.",
                      "link"         => "https://www.madueke.com",
                      "copyright"    => "Copyright (C) 2020 Emmanuel Atoe. All rights reserved.");
     

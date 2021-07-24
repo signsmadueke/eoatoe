@@ -1088,7 +1088,7 @@ body.dark #social svg path {
   fill: white !important;
 }
 
-body.dark .menu .icon-bar {
+body.dark .harmburger .icon-bar {
   background: white !important;
 }
 
@@ -1242,7 +1242,7 @@ body.container.about {
   display: block;
 }
 
-#sidebar .menu {
+#sidebar .harmburger {
   display: block;
 }
 
@@ -1493,13 +1493,13 @@ body.sidebar-opened .copyright {
   color: #9E4E22;
 }
 
-.menu {
+.harmburger {
   padding: 6.25px 0px 6.25px 12.5px;
   display: none;
   z-index: 2;
 }
 
-.menu .icon-bar {
+.harmburger .icon-bar {
   display: block;
   width: 35px;
   height: 1px;
@@ -1510,30 +1510,30 @@ body.sidebar-opened .copyright {
   margin: 0 auto;
 }
 
-.menu .icon-bar + .icon-bar {
+.harmburger .icon-bar + .icon-bar {
   -webkit-transform: none;
           transform: none;
   margin-top: 7px;
 }
 
-.menu.collapsed .icon-bar + .icon-bar {
+.harmburger.collapsed .icon-bar + .icon-bar {
   -webkit-transform: none;
           transform: none;
   margin-top: 0px;
 }
 
-.menu.collapsed .icon-bar:nth-child(1) {
+.harmburger.collapsed .icon-bar:nth-child(1) {
   opacity: 0;
   -webkit-transform: translate3d(0, 0px, 0);
           transform: translate3d(0, 0px, 0);
 }
 
-.menu.collapsed .icon-bar:nth-child(2) {
+.harmburger.collapsed .icon-bar:nth-child(2) {
   -webkit-transform: translate3d(0, -2px, 0) rotate(-45deg);
           transform: translate3d(0, -2px, 0) rotate(-45deg);
 }
 
-.menu.collapsed .icon-bar:nth-child(3) {
+.harmburger.collapsed .icon-bar:nth-child(3) {
   -webkit-transform: translate3d(0, -3px, 0) rotate(-135deg);
           transform: translate3d(0, -3px, 0) rotate(-135deg);
 }
@@ -5783,7 +5783,7 @@ body.container.donate {
 }
 
 @media (max-width: 1300px) {
-  .menu {
+  .harmburger {
     display: block !important;
   }
   #navigation {

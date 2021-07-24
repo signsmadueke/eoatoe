@@ -27,7 +27,7 @@
         <a href="/">
             <div class="logo-text">
                 <h3 class="logo-name">Emmanuel Atoe</h3>
-                <p class="logo-tagline">Christian Counsellor & Author</p>
+                <p class="logo-tagline">Author and Christian Counsellor</p>
             </div>
         </a>
     </div>
@@ -69,7 +69,7 @@
         </ul>
     </nav>
 
-    <button class="menu" type="button">
+    <button class="harmburger" type="button">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -82,14 +82,14 @@
             <a href="/">
                 <div class="logo-text">
                     <h3 class="logo-name">Emmanuel Atoe</h3>
-                    <p class="logo-tagline">Christian Counsellor & Author</p>
+                    <p class="logo-tagline">Author and Christian Counsellor</p>
                 </div>
             </a>
         </div>
 
         <div class="nav-space"></div>
 
-        <button class="menu" type="button">
+        <button class="harmburger" type="button">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>

@@ -9,8 +9,8 @@
 
     $page_name = "Counselling";
     $title = 'Counselling — Emmanuel Atoe';
-    $tagline = "Christian Counsellor & Author";
-    $page_description = 'Counselling by Emmanuel Atoe, Christian Counsellor & Author.';
+    $tagline = "Author and Christian Counsellor";
+    $page_description = 'Counselling by Emmanuel Atoe, Author and Christian Counsellor.';
     $page_image = "eoatoe/eoatoe.jpg";
     $extraBodyClasses = '';
     require_once 'inc/header.php';

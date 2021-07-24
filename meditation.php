@@ -42,7 +42,7 @@
 
     $page_name = "Meditations";
     $title = $meditation_link . " — Emmanuel Atoe";
-    $tagline = "Christian Counsellor & Author";
+    $tagline = "Author and Christian Counsellor";
     $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>
