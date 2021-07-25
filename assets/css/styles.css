@@ -7,6 +7,13 @@
 }
 
 @font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Atoe Domaine';
   src: url("../fonts/Domaine/DomaineDispNar-Semibold.otf") format("truetype");
   font-weight: 700;
@@ -1201,6 +1208,7 @@ body.container.about {
   line-height: 30px;
   display: block;
   letter-spacing: -0.5px;
+  color: #222222;
 }
 
 #sidebar ul li {
@@ -1477,7 +1485,7 @@ body.sidebar-opened .copyright {
   font-family: 'Atoe Domaine';
   font-size: 40px;
   line-height: 1em;
-  font-weight: 600;
+  font-weight: 700;
   white-space: nowrap;
   letter-spacing: -0.03em;
   color: #0A1A4E;
@@ -2571,7 +2579,7 @@ body.sidebar-opened .copyright {
 
 #book-details .details .title {
   font-family: 'Gilroy';
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0;
   font-size: 16px;
   line-height: 35px;
@@ -2582,7 +2590,7 @@ body.sidebar-opened .copyright {
 #book-details .details .book-title {
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 50px;
   line-height: 1.1em;
 }
