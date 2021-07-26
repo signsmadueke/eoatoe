@@ -2,49 +2,84 @@
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://eoatoe.com/counselling</loc>
-  </url>
-  <url>
-    <loc>https://eoatoe.com/book?book=church-growth-in-the-acts-of-the-apostles</loc>
-  </url>
-  <url>
-    <loc>https://eoatoe.com/book?book=a-moment-of-prayer</loc>
-  </url>
-  <url>
-    <loc>https://eoatoe.com</loc>
-  </url>
-  <url>
-    <loc>https://eoatoe.com/newbook?book=building-healthy-relationships</loc>
-  </url>
-  <url>
     <loc>https://eoatoe.com/meditations</loc>
-  </url>
-  <url>
-    <loc>https://eoatoe.com/contact</loc>
-  </url>
-  <url>
-    <loc>https://eoatoe.com/prayers</loc>
-  </url>
-  <url>
-    <loc>https://eoatoe.com/newbook?book=wisdom-for-your-best-life</loc>
-  </url>
-  <url>
-    <loc>https://eoatoe.com/</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
   </url>
   <url>
     <loc>https://eoatoe.com/about</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
+  </url>
+  <url>
+    <loc>https://eoatoe.com/book?book=a-moment-of-prayer</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
+  </url>
+  <url>
+    <loc>https://eoatoe.com/newbook?book=building-healthy-relationships</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
+  </url>
+  <url>
+    <loc>https://eoatoe.com/counselling</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
   </url>
   <url>
     <loc>https://eoatoe.com/books</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
   </url>
   <url>
-    <loc>https://eoatoe.com/meditation?meditation=children-of-promise</loc>
+    <loc>https://eoatoe.com/meditation?meditation=powerful-daily-confession-august-2021</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
   </url>
   <url>
     <loc>https://eoatoe.com/book?book=church-growth-in-the-acts-of-the-apostles:-the-lord-added-to-the-church-daily-those-who-were-being-saved</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
+  </url>
+  <url>
+    <loc>https://eoatoe.com/</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
+  </url>
+  <url>
+    <loc>https://eoatoe.com/meditation?meditation=blessed-to-be-blessing</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
+  </url>
+  <url>
+    <loc>https://eoatoe.com/book?book=church-growth-in-the-acts-of-the-apostles</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
   </url>
   <url>
     <loc>https://eoatoe.com/prayer?prayer=prayers-for-july</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
+  </url>
+  <url>
+    <loc>https://eoatoe.com/progressbook?book=defining-the-moment</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
+  </url>
+  <url>
+    <loc>https://eoatoe.com/contact</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
+  </url>
+  <url>
+    <loc>https://eoatoe.com/newbook?book=wisdom-for-your-best-life</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
+  </url>
+  <url>
+    <loc>https://eoatoe.com/prayers</loc>
+    <changefreq>always</changefreq>
+    <priority>0.0</priority>
   </url>
 </urlset>
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
