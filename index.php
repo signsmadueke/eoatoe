@@ -42,7 +42,7 @@
                     $book_link = strtolower(str_replace("'", "</b>", $book_title));
                     $book_link = strtolower(str_replace(" ", "-", $book_title));
                     ?>
-                    <a alt="<?= $book_titledisplay; ?>" href="newbook?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
+                    <a name="?= $book_link; ?>" alt="<?= $book_titledisplay; ?>" href="newbook?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
                         <div class="line"></div>
                     </a>
                 <?php } } ?>   
@@ -55,7 +55,7 @@
                     $book_link = strtolower(str_replace("'", "</b>", $book_title));
                     $book_link = strtolower(str_replace(" ", "-", $book_title));
                     ?>
-                    <a alt="<?= $book_titledisplay; ?>" href="book?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
+                    <a name="?= $book_link; ?>" alt="<?= $book_titledisplay; ?>" href="book?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
                         <div class="line"></div>
                     </a>
                 <?php } } ?>

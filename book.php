@@ -61,9 +61,9 @@ require_once 'inc/header.php';
                     <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
                 </div>
                 <div class="shadow">
-                    <img src="assets/images/books/<?= $book_image; ?>">
+                    <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
                 </div>
-                <a href="https://read.amazon.com/kp/embed?asin=<?= $book_kindle_asin; ?>" target="_blank" class="button">
+                <a href="https://read.amazon.com/kp/embed?asin=<?= $book_kindle_asin; ?>" rel="noreferrer" target="_blank" class="button">
                     <span>Preview Book</span>
                     <img class="svg" src="assets/images/icons/arrow-top-right.svg">
                 </a>
@@ -79,8 +79,8 @@ require_once 'inc/header.php';
                             <h1 class="price">&#36;<?= $book_kindle_price; ?></h1>
                             
                             <p class="name">Ebook</p>
-                            
-                            <a href="https://www.amazon.com/dp/<?= $book_kindle_asin; ?>" target="_blank" class="buy-btn" >
+
+                            <a href="https://www.amazon.com/dp/<?= $book_kindle_asin; ?>" rel="noreferrer" target="_blank" class="buy-btn" >
                                 <img class="svg" src="assets/images/formats/kindle.svg">
                             </a>
                         </div>
@@ -90,7 +90,7 @@ require_once 'inc/header.php';
                             
                             <p class="name">Paperback</p>
 
-                            <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" target="_blank" class="buy-btn" >
+                            <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" rel="noreferrer" target="_blank" class="buy-btn" >
                             <img class="svg" src="assets/images/formats/amazon.svg">
                         </a>
                         </div>
@@ -108,7 +108,7 @@ require_once 'inc/header.php';
 
                     <div class="book-attributes">
                         <div class="pages">
-                            <img src="assets/images/icons/pages.svg">
+                            <img class="svg" src="assets/images/icons/pages.svg">
                             <p><?= $total_book_page; ?><span> pages</span></p>
                         </div>
 

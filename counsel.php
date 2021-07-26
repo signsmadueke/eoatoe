@@ -4,15 +4,11 @@
     if (isset($_GET['counsel'])) {
         $counselTitle = $_GET['counsel'];
         $counsel_link = ucwords(str_replace("-", " ", $counselTitle));
-        
         $counsel_link = str_replace("'", "</b>", $counsel_link);
 
         $result = whereQuote("counselling", "counsel_title", "$counsel_link");
         if ($result) {
             $counselling = $result;
-        } else {
-            echo "false";
-            var_dump($result);
         }
 
         $response = getOtherBooksAsc("counselling", "counsel_title", $counsel_link, "counsel_id", 1);
@@ -33,10 +29,6 @@
         $page_description = trim(preg_replace('/\s+/', ' ', $page_description));
         $page_description = strip_tags($page_description);
         $page_description = substr($page_description, 0, 300) . "...";
-    }
-
-    foreach ($counselling as $image) {
-        $page_image = "devotionals/" . $image['counsel_image'];
     }
 
 

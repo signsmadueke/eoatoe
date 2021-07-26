@@ -4,15 +4,11 @@
     if (isset($_GET['prayer'])) {
         $prayerTitle = $_GET['prayer'];
         $prayer_link = ucwords(str_replace("-", " ", $prayerTitle));
-        
         $prayer_link = str_replace("'", "</b>", $prayer_link);
 
         $result = whereQuote("prayers", "prayer_title", "$prayer_link");
         if ($result) {
             $prayers = $result;
-        } else {
-            echo "false";
-            var_dump($result);
         }
 
         $response = getOtherBooksAsc("prayers", "prayer_title", $prayer_link, "prayer_id", 1);
@@ -34,11 +30,6 @@
         $page_description = strip_tags($page_description);
         $page_description = substr($page_description, 0, 300) . "...";
     }
-
-    foreach ($prayers as $image) {
-        $page_image = "devotionals/" . $image['prayer_image'];
-    }
-
 
     $page_name = "Prayers";
     $title = $prayer_link . " — Emmanuel Atoe";

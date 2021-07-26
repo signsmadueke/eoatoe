@@ -28,10 +28,12 @@ if (!empty($counselling)) {
     foreach ($counselling as $counsel) {
         extract($counsel);
         $counsel_title = str_replace("</b>", "'", $counsel_title);
-        $counsel_body = str_replace("</b>", "'", $counsel_body);
         $counsel_link = strtolower(str_replace(" ", "-", $counsel_title));
         $counsel_link = str_replace("'", "</b>", $counsel_link);
+        $counsel_body = str_replace("</b>", "'", $counsel_body);
         $htmltoplaintext = strip_tags($counsel_body);
+        $htmltoplaintext = trim(preg_replace('/\s+/', ' ', $htmltoplaintext));
+        $htmltoplaintext = substr($htmltoplaintext, 0, 200) . "...";
         ?>
 
 

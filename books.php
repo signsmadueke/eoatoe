@@ -49,12 +49,12 @@
                             <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
                         </div>
                         <div class="shadow">
-                            <img src="assets/images/books/<?= $book_image; ?>">
+                            <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
                         </div>
                     </a>
                     <div class="book-details">
                         <a alt="<?= $book_titledisplay; ?>" href="book?book=<?= $book_link; ?>" >
-                            <h3 class="book-name" title="<?= $book_titledisplay; ?>"><?= $book_titledisplay; ?></h3>
+                            <h2 class="book-name" title="<?= $book_titledisplay; ?>"><?= $book_titledisplay; ?></h2>
                         </a>
                         <a alt="<?= $book_titledisplay; ?>" href="book?book=<?= $book_link; ?>" class="btn btn-chevron btn-view">
                             <span>View Details</span>
@@ -90,12 +90,12 @@
                             <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
                         </div>
                         <div class="shadow">
-                            <img src="assets/images/books/<?= $book_image; ?>">
+                            <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
                         </div>
                     </a>
                     <div class="book-details">
                         <a alt="<?= $book_titledisplay; ?>" href="newbook?book=<?= $book_link; ?>" >
-                            <h3 class="book-name" title="<?= $book_titledisplay; ?>"><?= $book_titledisplay; ?></h3>
+                            <h2 class="book-name" title="<?= $book_titledisplay; ?>"><?= $book_titledisplay; ?></h2>
                         </a>
                         <a alt="<?= $book_titledisplay; ?>" href="newbook?book=<?= $book_link; ?>" class="btn btn-chevron btn-view">
                             <span>View Details</span>
@@ -113,7 +113,7 @@
 
 <?php } ?>
 
-<!-- <?php if (!empty($progressbooks)) {?>
+<?php if (!empty($progressbooks)) {?>
 <section id="all-books">
     
     <h1 class="section-title animated reveal">Books in Progress</h1>
@@ -133,12 +133,12 @@
                             <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
                         </div>
                         <div class="shadow">
-                            <img src="assets/images/books/<?= $book_image; ?>">
+                            <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
                         </div>
                     </a>
                     <div class="book-details">
                         <a alt="<?= $book_titledisplay; ?>" href="progressbook?book=<?= $book_link; ?>" >
-                            <h3 class="book-name" title="<?= $book_titledisplay; ?>"><?= $book_titledisplay; ?></h3>
+                            <h2 class="book-name" title="<?= $book_titledisplay; ?>"><?= $book_titledisplay; ?></h2>
                         </a>
                         <a alt="<?= $book_titledisplay; ?>" href="progressbook?book=<?= $book_link; ?>" class="btn btn-chevron btn-view">
                             <span>View Details</span>
@@ -154,7 +154,7 @@
 
 <div id="space"></div>
 
-<?php } ?> -->
+<?php } ?>
 
 <?php
     require_once 'inc/footer.php';

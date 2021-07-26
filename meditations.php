@@ -6,7 +6,6 @@
         $meditations = $result;
     }
 
-
     $page_name = "Meditations";
     $title = 'Meditations — Emmanuel Atoe';
     $tagline = "Author and Christian Counsellor";
@@ -28,10 +27,12 @@ if (!empty($meditations)) {
     foreach ($meditations as $meditation) {
         extract($meditation);
         $meditation_title = str_replace("</b>", "'", $meditation_title);
-        $meditation_body = str_replace("</b>", "'", $meditation_body);
         $meditation_link = strtolower(str_replace(" ", "-", $meditation_title));
         $meditation_link = str_replace("'", "</b>", $meditation_link);
+        $meditation_body = str_replace("</b>", "'", $meditation_body);
         $htmltoplaintext = strip_tags($meditation_body);
+        $htmltoplaintext = trim(preg_replace('/\s+/', ' ', $htmltoplaintext));
+        $htmltoplaintext = substr($htmltoplaintext, 0, 200) . "...";
         ?>
 
 

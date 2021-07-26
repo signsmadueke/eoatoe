@@ -59,7 +59,7 @@ require_once 'inc/header.php';
                     <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
                 </div>
                 <div class="shadow">
-                    <img src="assets/images/books/<?= $book_image; ?>">
+                    <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
                 </div>
             </div>
             <!-- <img class="book-image animate reveal" src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>"> -->

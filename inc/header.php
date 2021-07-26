@@ -69,7 +69,7 @@
         </ul>
     </nav>
 
-    <button class="harmburger" type="button">
+    <button class="harmburger" name="Menu" alt="Menu" type="button">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -89,7 +89,7 @@
 
         <div class="nav-space"></div>
 
-        <button class="harmburger" type="button">
+        <button class="harmburger" name="Menu" alt="Menu" type="button">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -156,6 +156,6 @@
     <div id="sidebar-space"></div>
     <div id="sidebar-space"></div>
 
-    <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Emmanuel Atoe. All rights reserved.</p>
+    <p class="copyright">&copy; <span id="copyrightdate">2021</span> Emmanuel Atoe. All rights reserved.</p>
 
 </section>

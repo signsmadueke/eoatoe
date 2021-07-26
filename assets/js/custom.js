@@ -1,6 +1,9 @@
 "use strict";
 
 $(document).ready(function () {
+
+	document.getElementById('copyrightdate').innerHTML = new Date().getFullYear();
+
 	$(".harmburger").on('click', function (openSidebar) {
 		var $body = $('body');
 		var $menu = $('.harmburger');

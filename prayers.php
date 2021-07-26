@@ -28,10 +28,12 @@ if (!empty($prayers)) {
     foreach ($prayers as $prayer) {
         extract($prayer);
         $prayer_title = str_replace("</b>", "'", $prayer_title);
-        $prayer_body = str_replace("</b>", "'", $prayer_body);
         $prayer_link = strtolower(str_replace(" ", "-", $prayer_title));
         $prayer_link = str_replace("'", "</b>", $prayer_link);
+        $prayer_body = str_replace("</b>", "'", $prayer_body);
         $htmltoplaintext = strip_tags($prayer_body);
+        $htmltoplaintext = trim(preg_replace('/\s+/', ' ', $htmltoplaintext));
+        $htmltoplaintext = substr($htmltoplaintext, 0, 200) . "...";
         ?>
 
 

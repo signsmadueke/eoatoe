@@ -4,15 +4,11 @@
     if (isset($_GET['meditation'])) {
         $meditationTitle = $_GET['meditation'];
         $meditation_link = ucwords(str_replace("-", " ", $meditationTitle));
-        
         $meditation_link = str_replace("'", "</b>", $meditation_link);
 
         $result = whereQuote("meditations", "meditation_title", "$meditation_link");
         if ($result) {
             $meditations = $result;
-        } else {
-            echo "false";
-            var_dump($result);
         }
 
         $response = getOtherBooksAsc("meditations", "meditation_title", $meditation_link, "meditation_id", 1);
@@ -34,11 +30,6 @@
         $page_description = strip_tags($page_description);
         $page_description = substr($page_description, 0, 300) . "...";
     }
-
-    foreach ($meditations as $image) {
-        $page_image = "devotionals/" . $image['meditation_image'];
-    }
-
 
     $page_name = "Meditations";
     $title = $meditation_link . " — Emmanuel Atoe";

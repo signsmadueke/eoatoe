@@ -1,5 +1,5 @@
 <footer id="footer">
-    <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Emmanuel Atoe. All rights reserved.</p>
+    <p class="copyright">&copy; <span id="copyrightdate">2021</span> Emmanuel Atoe. All rights reserved.</p>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
