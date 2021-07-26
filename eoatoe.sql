@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jul 26, 2021 at 10:31 AM
+-- Generation Time: Jul 26, 2021 at 12:03 PM
 -- Server version: 5.7.30
 -- PHP Version: 7.4.9
 
@@ -216,6 +216,13 @@ CREATE TABLE `progressbooks` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `progressbooks`
+--
+
+INSERT INTO `progressbooks` (`book_id`, `book_title`, `book_author`, `book_image`, `book_description`, `date_added`) VALUES
+(1, 'Defining the Moment', 'Emmanuel Atoe', 'defining-the-moment.jpg', '<p>&nbsp;</p>', '2021-07-26');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -329,4 +336,4 @@ ALTER TABLE `prayers`
 -- AUTO_INCREMENT for table `progressbooks`
 --
 ALTER TABLE `progressbooks`
-  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
