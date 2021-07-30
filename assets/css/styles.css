@@ -3160,7 +3160,7 @@ body.sidebar-opened .copyright {
   grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
   padding: 100px 30px;
-  background: linear-gradient(45deg, #ffefc3, #ffd2ba);
+  background: rgba(10, 26, 78, 0.1);
   border-radius: 10px;
   width: 100%;
   max-width: 900px;
@@ -3170,6 +3170,7 @@ body.sidebar-opened .copyright {
 
 #devotional-details .devotional-name {
   font-family: 'Atoe Domaine';
+  color: #0A1A4E;
 }
 
 #devotional-details .devotional-author {
