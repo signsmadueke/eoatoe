@@ -26,7 +26,7 @@
                     $book_link = strtolower(str_replace("'", "</b>", $book_title));
                     $book_link = strtolower(str_replace(" ", "-", $book_title));
                     ?>
-                    <div class="buk animate reveal">
+                    <div class="book animate reveal">
                         <a alt="<?= $book_titledisplay; ?>" href="book?book=<?= $book_link; ?>" class="book-image">
                             <div class="image">
                                 <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">

@@ -4,7 +4,7 @@
     $tagline = "Author and Christian Counsellor";
     $page_description = "Dr. (Pastor) Emmanuel O. Atoe's ministry, through the gifts of the Holy Spirit and the grace of God, has enabled him to motivate, inspire and assist many people by prayer, teaching and counselling.";
     $page_image = "eoatoe/eoatoe.jpg";
-    $extraBodyClasses = 'dark contact';
+    $extraBodyClasses = 'contact';
     require_once 'inc/header.php';
 ?>
 
@@ -16,6 +16,8 @@
         <img class="svg decor" src="assets/images/icons/decor.svg">
     </div>
 </section>
+
+<div id="space"></div>
 
 <section id="contacts" class="animated reveal">
     <a href="mailto:hello@eoatoe.com">

@@ -15,7 +15,7 @@
     $tagline = "Author and Christian Counsellor";
     $page_description = "Dr. (Pastor) Emmanuel O. Atoe's ministry, through the gifts of the Holy Spirit and the grace of God, has enabled him to motivate, inspire and assist many people by prayer, teaching and counselling.";
     $page_image = "eoatoe/eoatoe.jpg";
-    $extraBodyClasses = 'dark';
+    $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>
 
@@ -42,9 +42,17 @@
                     $book_link = strtolower(str_replace("'", "</b>", $book_title));
                     $book_link = strtolower(str_replace(" ", "-", $book_title));
                     ?>
-                    <a name="?= $book_link; ?>" alt="<?= $book_titledisplay; ?>" href="newbook?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
-                        <div class="line"></div>
-                    </a>
+
+                    <div class="book animate reveal">
+                        <a alt="<?= $book_titledisplay; ?>" title="<?= $book_titledisplay; ?>" name="<?= $book_link; ?>" href="newbook?book=<?= $book_link; ?>" class="book-image">
+                            <div class="image">
+                                <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
+                            </div>
+                            <div class="shadow">
+                                <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
+                            </div>
+                        </a>
+                    </div>
                 <?php } } ?>   
 
        <?php
@@ -55,9 +63,17 @@
                     $book_link = strtolower(str_replace("'", "</b>", $book_title));
                     $book_link = strtolower(str_replace(" ", "-", $book_title));
                     ?>
-                    <a name="?= $book_link; ?>" alt="<?= $book_titledisplay; ?>" href="book?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
-                        <div class="line"></div>
-                    </a>
+                    
+                    <div class="book animate reveal">
+                        <a alt="<?= $book_titledisplay; ?>" title="<?= $book_titledisplay; ?>" name="<?= $book_link; ?>" href="book?book=<?= $book_link; ?>" class="book-image">
+                            <div class="image">
+                                <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
+                            </div>
+                            <div class="shadow">
+                                <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
+                            </div>
+                        </a>
+                    </div>
                 <?php } } ?>
     </div>
 </section>

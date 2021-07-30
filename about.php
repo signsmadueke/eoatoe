@@ -4,7 +4,7 @@
     $tagline = "Author and Christian Counsellor";
     $page_description = "Dr. (Pastor) Emmanuel O. Atoe's ministry, through the gifts of the Holy Spirit and the grace of God, has enabled him to motivate, inspire and assist many people by prayer, teaching and counselling.";
     $page_image = "eoatoe/eoatoe.jpg";
-    $extraBodyClasses = 'dark about';
+    $extraBodyClasses = 'about';
     require_once 'inc/header.php';
 ?>
 
@@ -16,8 +16,6 @@
         <img class="svg decor" src="assets/images/icons/decor.svg">
     </div>
 </section>
-
-
 
 <section id="about-the-author" class="animated reveal">
     <p>Dr. (Pastor) Emmanuel O. Atoe (PhD.) has been in the ministry for more than 25 years. Pastor Manny has positively affected many people’s lives through the Word of God and the power of the Holy Spirit. His ministry, through the gifts of the Holy Spirit and the grace of God, has enabled him to motivate, inspire and assist many people by prayer, teaching and counselling.<br><br>
