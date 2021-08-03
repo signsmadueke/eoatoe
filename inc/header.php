@@ -22,7 +22,7 @@
 </head>
 
 <body class="container <?php echo $extraBodyClasses; ?>">
-<section id="navigation">
+<section id="navigation" class="container">
     <div id="logo">
         <a href="/">
             <div class="logo-text">
@@ -75,6 +75,8 @@
         <span class="icon-bar"></span>
     </button>
 </section>
+
+<div id="space"></div>
 
 <section id="sidebar">
     <section id="navigation">
