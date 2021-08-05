@@ -2775,15 +2775,20 @@ body.sidebar-opened {
 
 	a {
 		width: 100%;
-		padding-top: 50%;
-		padding-bottom: 50%;
+		padding-top: 40%;
+		padding-bottom: 40%;
 		background: rgba(10, 26, 78, 0.05);
 		text-align: center;
 		border-radius: 10px;
+		aspect-ratio: 1 / 1;
 
 		// h1 {
 		// 	font-family: 'Atoe Domaine';
 		// }
+
+		p {
+			font-size: 22px;
+		}
 
 		&:hover {
 			background: rgba(10, 26, 78, 0.1);

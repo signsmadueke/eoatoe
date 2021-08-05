@@ -20,13 +20,13 @@
 <div id="space"></div>
 
 <section id="contacts" class="animated reveal">
-    <a href="mailto:hello@eoatoe.com">
+    <a href="mailto:hello@eoatoe.com?subject=Hello%20Emmanuel%20Atoe&body=My%20name%20is%3A%0D%0A%0D%0AI%20would%20like%20us%20to%20talk%20about%3A">
         <h1 class="animated reveal">General</h1>
         <p class="animated reveal">hello@eoatoe.com</p>
     </a>
-    <a href="mailto:requests@eoatoe.com">
-        <h1 class="animated reveal">Prayer Requests</h1>
-        <p class="animated reveal">requests@eoatoe.com</p>
+    <a href="mailto:book@eoatoe.com?subject=Book%20Emmanuel%20Atoe&body=I%20would%20like%20to%20contact%20Dr.%20Pastor%20Emmanuel%20Atoe%20about%20coming%20to%20minister%20in%20my%20church%20or%20conference.%0D%0A%0D%0AMy%20name%20is%3A%0D%0A%0D%0AMy%20Phone%20Number%20is%3A">
+        <h1 class="animated reveal">Bookings</h1>
+        <p class="animated reveal">book@eoatoe.com</p>
     </a>
 </section>
 
