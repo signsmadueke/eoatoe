@@ -24,9 +24,9 @@
         <h1 class="animated reveal">General</h1>
         <p class="animated reveal">hello@eoatoe.com</p>
     </a>
-    <a href="mailto:programs@eoatoe.com?subject=Book%20Emmanuel%20Atoe&body=I%20would%20like%20to%20contact%20Dr.%20Pastor%20Emmanuel%20Atoe%20about%20coming%20to%20minister%20in%20my%20church%20or%20conference.%0D%0A%0D%0AMy%20name%20is%3A%0D%0A%0D%0AMy%20Phone%20Number%20is%3A">
-        <h1 class="animated reveal">Programs</h1>
-        <p class="animated reveal">programs@eoatoe.com</p>
+    <a href="mailto:invite-speaker@eoatoe.com?subject=Book%20Emmanuel%20Atoe&body=I%20would%20like%20to%20contact%20Dr.%20Pastor%20Emmanuel%20Atoe%20about%20coming%20to%20minister%20in%20my%20church%20or%20conference.%0D%0A%0D%0AMy%20name%20is%3A%0D%0A%0D%0AMy%20Phone%20Number%20is%3A">
+        <h1 class="animated reveal">Conference Invitations</h1>
+        <p class="animated reveal">invite-speaker@eoatoe.com</p>
     </a>
 </section>
 
