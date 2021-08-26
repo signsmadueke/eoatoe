@@ -1,11 +1,11 @@
 <?php
     require_once "admin/includes/functions/config.php";
-    $result = fetchAllDesc("newbooks", "book_id", 0, 2);
+    $result = fetchAllDesc("newbooks", "book_id", 0, 1);
     if ($result) {
         $newbooks = $result;
     }
 
-    $result2 = fetchAllDesc("books", "book_id", 0, 2);
+    $result2 = fetchAllDesc("books", "book_id", 0, 3);
     if ($result2) {
         $books = $result2;
     }
