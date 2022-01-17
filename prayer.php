@@ -52,7 +52,7 @@
                     <div class="devotional-author">
                         <p><span>by </span><?= $prayer_author; ?></p>
                     </div>
-                    <p><span>Posted on </span><?= date("D, d M Y", strtotime($datePosted)); ?></p>
+                    <!-- <p><span>Posted on </span><?= date("D, d M Y", strtotime($datePosted)); ?></p> -->
                 </section>
 
                 <section id="devotional-post">

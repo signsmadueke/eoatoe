@@ -42,9 +42,9 @@ if (!empty($prayers)) {
                 <a href="prayer?prayer=<?= $prayer_link; ?>">
                     <h3><?= $prayer_title; ?></h3>
                 </a>
-                <div class="devotional-date">
+                <!-- <div class="devotional-date">
                     <p><span>Posted on </span><?= date("D, d M Y", strtotime($datePosted)); ?></p>
-                </div>
+                </div> -->
                 <a href="prayer?prayer=<?= $prayer_link; ?>" class="description">
                     <div><?= $htmltoplaintext; ?></div>
                 </a>
