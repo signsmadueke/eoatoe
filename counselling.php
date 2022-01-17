@@ -42,9 +42,9 @@ if (!empty($counselling)) {
                 <a href="counsel?counsel=<?= $counsel_link; ?>">
                     <h3><?= $counsel_title; ?></h3>
                 </a>
-                <!-- <div class="devotional-date">
+                <div class="devotional-date">
                     <p><span>Posted on </span><?= date("D, d M Y", strtotime($datePosted)); ?></p>
-                </div> -->
+                </div>
                 <a href="counsel?counsel=<?= $counsel_link; ?>" class="description">
                     <div><?= $htmltoplaintext; ?></div>
                 </a>
