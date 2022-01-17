@@ -113,6 +113,7 @@
 
 <?php } ?>
 
+<!-- 
 <?php if (!empty($progressbooks)) {?>
 <section id="all-books">
     
@@ -155,6 +156,7 @@
 <div id="space"></div>
 
 <?php } ?>
+-->
 
 <?php
     require_once 'inc/footer.php';
