@@ -7,24 +7,19 @@
     } else {
         echo "Temporary Error! Please check back later";
     }
-    
-    /**
-    * For demonstration purposes, the data is defined here.
-    * In a real scenario it should be loaded from a database.
-    */
+
+    $response2 = fetchAll("prayers", "prayer_id");
+    if ($response2) {
+        $items2 = $response2;
+    }
+
     $channel = array("title"        => "Emmanuel Atoe",
                      "description"  => "Emmanuel Atoe, Author and Christian Counsellor.",
-                     "link"         => "https://www.madueke.com",
+                     "link"         => "https://www.eoatoe.com",
                      "copyright"    => "Copyright (C) 2020 Emmanuel Atoe. All rights reserved.");
     
-    // $items = array(
-    //     array("title"       => "$meditation_title",
-    //           "description" => "This is the description of the first example.",
-    //           "link"        => "https://www.example.com/example1.html",
-    //           "pubDate"     => date("D, d M Y H:i:s O", mktime(22, 10, 0, 12, 29, 2008)))
-    // );
     
-    $output = "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?" . ">";
+    $output = "<?xml version=\"1.0\" encoding=\"UTF-8\"?" . ">";
     $output .= "<rss version=\"2.0\">";
     $output .= "<channel>";
     $output .= "<title>" . $channel["title"] . "</title>";
@@ -44,14 +39,30 @@
         $output .= "<item>";
         $output .= "<title>" . $item["meditation_title"] . "</title>";
         $output .= "<description>" . $meditation_body . "</description>";
-        $output .= "<link>" . "https://www.madueke.com/meditational?meditation=$meditation_link" . "</link>";
+        $output .= "<link>" . "https://www.eoatoe.com/meditation?meditation=$meditation_link" . "</link>";
         $output .= "<pubDate>" . date("D, d M Y H:i:s T", strtotime($item['datePosted'])) . "</pubDate>";
+        $output .= "</item>";
+    }
+    foreach ($items2 as $item2) {
+        $prayer_link = strtolower((str_replace(" ", "-", $item2['prayer_title'])));
+        $prayer_body = str_replace("</b>", "'", $item2["prayer_body"]);
+        $prayer_body = trim(preg_replace('/\s+/', ' ', $prayer_body));
+        $prayer_body = strip_tags(utf8_encode(stripslashes($prayer_body)));
+        $prayer_body = substr($prayer_body, 0, 1000) . "...";
+        $source = $item2['datePosted'];
+        $date = new DateTime($source);
+        
+        $output .= "<item>";
+        $output .= "<title>" . $item2["prayer_title"] . "</title>";
+        $output .= "<description>" . $prayer_body . "</description>";
+        $output .= "<link>" . "https://www.eoatoe.com/prayer?prayer=$prayer_link" . "</link>";
+        $output .= "<pubDate>" . date("D, d M Y H:i:s T", strtotime($item2['datePosted'])) . "</pubDate>";
         $output .= "</item>";
     }
     $output .= "</channel>";
     $output .= "</rss>";
     
-    header("Content-Type: application/rss+xml; charset=ISO-8859-1");
+    header("Content-Type: application/rss+xml; charset=UTF-8");
     echo $output;
 
 ?>
