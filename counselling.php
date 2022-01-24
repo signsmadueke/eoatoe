@@ -22,7 +22,7 @@
 
     <h1 class="section-title animated reveal">Counselling</h1>
         
-    <!-- <div class="devotionals" id="devotionals">
+    <div class="devotionals" id="devotionals">
     <?php
 if (!empty($counselling)) {
     foreach ($counselling as $counsel) {
@@ -57,7 +57,7 @@ if (!empty($counselling)) {
             </div>
         </div>
     <?php } } ?>
-    </div> -->
+    </div>
 
 </section>
 
