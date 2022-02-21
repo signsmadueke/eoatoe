@@ -73,7 +73,7 @@
 <?php if (!empty($newbooks)) {?>
 <section id="all-books">
     
-    <h1 class="section-title animated reveal">Coming Soon Books</h1>
+    <h1 class="section-title animated reveal">Prereleased Books</h1>
     
     <div id="books">
         <?php 
