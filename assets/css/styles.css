@@ -2625,6 +2625,17 @@ body.sidebar-opened .copyright {
   opacity: 0.8;
 }
 
+#other-books .prev-book .prev-book-details .name div * {
+  font-size: 14px;
+  line-height: 24px;
+  overflow: hidden;
+  height: 72px;
+  position: relative;
+  max-width: 300px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
 @media (max-width: 800px) {
   #other-books .prev-book .prev-book-details .name {
     display: none;
@@ -2726,6 +2737,17 @@ body.sidebar-opened .copyright {
 }
 
 #other-books .next-book .next-book-details .name div {
+  font-size: 14px;
+  line-height: 24px;
+  overflow: hidden;
+  height: 72px;
+  position: relative;
+  max-width: 300px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+#other-books .next-book .next-book-details .name div * {
   font-size: 14px;
   line-height: 24px;
   overflow: hidden;

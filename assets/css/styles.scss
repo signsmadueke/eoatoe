@@ -2551,6 +2551,17 @@ body.sidebar-opened {
 					max-width: 300px;
 					font-weight: 500;
 					opacity: 0.8;
+
+					* {
+						font-size: 14px;
+						line-height: 24px;
+						overflow: hidden;
+						height: 72px;
+						position: relative;
+						max-width: 300px;
+						font-weight: 500;
+						opacity: 0.8;
+					}
 				}
 
 				@media (max-width: 800px) {
@@ -2643,6 +2654,17 @@ body.sidebar-opened {
 					max-width: 300px;
 					font-weight: 500;
 					opacity: 0.8;
+
+					* {
+						font-size: 14px;
+						line-height: 24px;
+						overflow: hidden;
+						height: 72px;
+						position: relative;
+						max-width: 300px;
+						font-weight: 500;
+						opacity: 0.8;
+					}
 				}
 
 				@media (max-width: 800px) {
